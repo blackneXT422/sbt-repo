@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.camel"
+		module="camel-ejb"
+		revision="2.13.2"
+		status="release"
+		publication="20140701123126"
+	>
+		<description homepage="">
+		Camel EJB support
+		</description>
+		<m:dependency.management__com.sun.xml.bind__jaxb-impl__exclusion_0>javax.jws__jsr181-api</m:dependency.management__com.sun.xml.bind__jaxb-impl__exclusion_0>
+		<m:dependency.management__org.apache.camel__camel-cache__version>2.13.2</m:dependency.management__org.apache.camel__camel-cache__version>
+		<m:properties__solr-version-range>[4.5,5)</m:properties__solr-version-range>
+		<m:dependency.management__org.apache.camel__camel-printer__version>2.13.2</m:dependency.management__org.apache.camel__camel-printer__version>
+		<m:properties__jt400-bundle-version>6.7_1</m:properties__jt400-bundle-version>
+		<m:properties__exec-maven-plugin-version>1.2.1</m:properties__exec-maven-plugin-version>
+		<m:properties__hadoop-bundle-version>1.2.1_1</m:properties__hadoop-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-jackson__version>2.13.2</m:dependency.management__org.apache.camel__camel-jackson__version>
+		<m:dependency.management__org.apache.camel__camel-jasypt__version>2.13.2</m:dependency.management__org.apache.camel__camel-jasypt__version>
+		<m:properties__commons-jxpath-version>1.3</m:properties__commons-jxpath-version>
+		<m:properties__spring-version>${spring32-version}</m:properties__spring-version>
+		<m:properties__jing-version>20030619</m:properties__jing-version>
+		<m:dependency.management__org.apache.camel__camel-couchdb__version>2.13.2</m:dependency.management__org.apache.camel__camel-couchdb__version>
+		<m:properties__tagsoup-bundle-version>1.2_5</m:properties__tagsoup-bundle-version>
+		<m:properties__avro-bundle-version>1.7.6_1</m:properties__avro-bundle-version>
+		<m:properties__javassist-bundle-version>3.12.1.GA_3</m:properties__javassist-bundle-version>
+		<m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-tinybundles__version>1.3.1</m:dependency.management__org.ops4j.pax.swissbox__pax-swissbox-tinybundles__version>
+		<m:properties__commons-net-version>3.3</m:properties__commons-net-version>
+		<m:properties__antlr-bundle-version>3.4_1</m:properties__antlr-bundle-version>
+		<m:dependency.management__org.apache.avro__avro__version>1.7.6</m:dependency.management__org.apache.avro__avro__version>
+		<m:properties__opensaml-version>2.5.1_2</m:properties__opensaml-version>
+		<m:properties__flatpack-bundle-version>3.2.0_2</m:properties__flatpack-bundle-version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jms_1.1_spec__version>1.1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jms_1.1_spec__version>
+		<m:properties__infinispan-version>6.0.2.Final</m:properties__infinispan-version>
+		<m:properties__google-gdata-bundle-version>1.41.1_1</m:properties__google-gdata-bundle-version>
+		<m:dependency.management__org.apache.avro__avro-ipc__version>1.7.6</m:dependency.management__org.apache.avro__avro-ipc__version>
+		<m:properties__jdk.version>1.6</m:properties__jdk.version>
+		<m:properties__commons-exec-version>1.1</m:properties__commons-exec-version>
+		<m:properties__commons-jexl2-version>2.1.1</m:properties__commons-jexl2-version>
+		<m:dependency.management__org.apache.camel__camel-jetty__version>2.13.2</m:dependency.management__org.apache.camel__camel-jetty__version>
+		<m:dependency.management__org.apache.camel__camel-yammer__version>2.13.2</m:dependency.management__org.apache.camel__camel-yammer__version>
+		<m:properties__quickfix-bundle-version>1.5.3_1</m:properties__quickfix-bundle-version>
+		<m:properties__jaxen-version>1.1.4</m:properties__jaxen-version>
+		<m:properties__xpp3-version>1.1.4c</m:properties__xpp3-version>
+		<m:properties__vysper-version>0.7</m:properties__vysper-version>
+		<m:properties__jline-version>2.11</m:properties__jline-version>
+		<m:properties__wsdl4j-bundle-version>1.6.2_6</m:properties__wsdl4j-bundle-version>
+		<m:properties__deltaspike-version>0.7</m:properties__deltaspike-version>
+		<m:properties__commons-io-version>1.4</m:properties__commons-io-version>
+		<m:dependency.management__org.apache.camel__camel-ognl__version>2.13.2</m:dependency.management__org.apache.camel__camel-ognl__version>
+		<m:properties__spring-batch-version>2.2.5.RELEASE</m:properties__spring-batch-version>
+		<m:properties__groovy-version>2.2.2</m:properties__groovy-version>
+		<m:properties__jdom-bundle-version>1.1_4</m:properties__jdom-bundle-version>
+		<m:dependency.management__org.easymock__easymockclassextension__version>3.2</m:dependency.management__org.easymock__easymockclassextension__version>
+		<m:properties__google-app-engine-bundle-version>1.8.3_1</m:properties__google-app-engine-bundle-version>
+		<m:properties__snappy-version>1.1.0.1</m:properties__snappy-version>
+		<m:properties__dozer-version>5.4.0</m:properties__dozer-version>
+		<m:dependency.management__org.apache.camel__camel-spring-ldap__version>2.13.2</m:dependency.management__org.apache.camel__camel-spring-ldap__version>
+		<m:properties__geronimo-servlet-spec-version>1.0</m:properties__geronimo-servlet-spec-version>
+		<m:dependency.management__org.apache.camel__camel-groovy__version>2.13.2</m:dependency.management__org.apache.camel__camel-groovy__version>
+		<m:properties__organization.logo>http://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:dependency.management__org.apache.camel__camel-example-twitter-websocket__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-twitter-websocket__version>
+		<m:properties__lightcouch-bundle-version>0.0.5_1</m:properties__lightcouch-bundle-version>
+		<m:dependency.management__org.springframework__spring-tx__version>3.2.8.RELEASE</m:dependency.management__org.springframework__spring-tx__version>
+		<m:dependency.management__org.springframework__spring-context-support__version>3.2.8.RELEASE</m:dependency.management__org.springframework__spring-context-support__version>
+		<m:dependency.management__org.apache.camel__camel-jms__version>2.13.2</m:dependency.management__org.apache.camel__camel-jms__version>
+		<m:properties__commons-lang3-version>3.1</m:properties__commons-lang3-version>
+		<m:properties__testng-version>6.8.8</m:properties__testng-version>
+		<m:dependency.management__org.apache.camel__camel-kestrel__version>2.13.2</m:dependency.management__org.apache.camel__camel-kestrel__version>
+		<m:properties__qpid-bundle-version>0.26_1</m:properties__qpid-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-krati__version>2.13.2</m:dependency.management__org.apache.camel__camel-krati__version>
+		<m:dependency.management__org.apache.camel__camel-mina__version>2.13.2</m:dependency.management__org.apache.camel__camel-mina__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-util__version>8.1.14.v20131031</m:dependency.management__org.eclipse.jetty__jetty-util__version>
+		<m:dependency.management__org.apache.ftpserver__ftplet-api__version>1.0.6</m:dependency.management__org.apache.ftpserver__ftplet-api__version>
+		<m:dependency.management__org.apache.camel__camel-hbase__version>2.13.2</m:dependency.management__org.apache.camel__camel-hbase__version>
+		<m:dependency.management__org.ops4j.pax.runner__pax-runner-no-jcl__version>1.7.6</m:dependency.management__org.ops4j.pax.runner__pax-runner-no-jcl__version>
+		<m:dependency.management__org.apache.camel__camel-stream__version>2.13.2</m:dependency.management__org.apache.camel__camel-stream__version>
+		<m:properties__netty-version>4.0.20.Final</m:properties__netty-version>
+		<m:properties__camel.osgi.import.pkg>
+      !${camel.osgi.export.pkg},
+      org.apache.camel.*;${camel.osgi.import.camel.version},
+      ${camel.osgi.import.before.defaults},
+      ${camel.osgi.import.defaults},
+      ${camel.osgi.import.additional},
+      *
+    </m:properties__camel.osgi.import.pkg>
+		<m:properties__zookeeper-version>3.4.6</m:properties__zookeeper-version>
+		<m:properties__commons-configuration-version>1.9</m:properties__commons-configuration-version>
+		<m:properties__cxf-xjc-utils-version>2.7.0</m:properties__cxf-xjc-utils-version>
+		<m:dependency.management__org.apache.camel__camel-gae__version>2.13.2</m:dependency.management__org.apache.camel__camel-gae__version>
+		<m:properties__axiom-version>1.2.14</m:properties__axiom-version>
+		<m:properties__scribe-version>1.3.5</m:properties__scribe-version>
+		<m:dependency.management__org.apache.camel__camel-xmlrpc__version>2.13.2</m:dependency.management__org.apache.camel__camel-xmlrpc__version>
+		<m:dependency.management__org.apache.camel__camel-velocity__version>2.13.2</m:dependency.management__org.apache.camel__camel-velocity__version>
+		<m:properties__maven-dependency-plugin-version>2.8</m:properties__maven-dependency-plugin-version>
+		<m:dependency.management__org.apache.camel__camel-fop__version>2.13.2</m:dependency.management__org.apache.camel__camel-fop__version>
+		<m:dependency.management__org.apache.httpcomponents__httpcore__version>4.3.2</m:dependency.management__org.apache.httpcomponents__httpcore__version>
+		<m:dependency.management__org.apache.xbean__xbean-spring__version>3.16</m:dependency.management__org.apache.xbean__xbean-spring__version>
+		<m:dependency.management__org.apache.camel__camel-example-cxf-proxy__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-cxf-proxy__version>
+		<m:dependency.management__org.apache.camel__camel-http__version>2.13.2</m:dependency.management__org.apache.camel__camel-http__version>
+		<m:properties__json-path-version>0.9.1</m:properties__json-path-version>
+		<m:dependency.management__org.apache.camel__camel-optaplanner__version>2.13.2</m:dependency.management__org.apache.camel__camel-optaplanner__version>
+		<m:dependency.management__org.apache.camel__camel-elasticsearch__version>2.13.2</m:dependency.management__org.apache.camel__camel-elasticsearch__version>
+		<m:properties__maven-resources-plugin-version>2.6</m:properties__maven-resources-plugin-version>
+		<m:properties__commons-configuration-bundle-version>1.9_1</m:properties__commons-configuration-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-jcr__version>2.13.2</m:dependency.management__org.apache.camel__camel-jcr__version>
+		<m:dependency.management__org.apache.camel__camel-example-pojo-messaging__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-pojo-messaging__version>
+		<m:properties__guice-version>3.0</m:properties__guice-version>
+		<m:dependency.management__org.apache.camel__camel-xmpp__version>2.13.2</m:dependency.management__org.apache.camel__camel-xmpp__version>
+		<m:properties__cxf-version>2.7.11</m:properties__cxf-version>
+		<m:dependency.management__org.apache.camel__camel-mail__version>2.13.2</m:dependency.management__org.apache.camel__camel-mail__version>
+		<m:properties__xmlbeans-bundle-version>2.6.0_2</m:properties__xmlbeans-bundle-version>
+		<m:properties__sshd-version>0.10.1</m:properties__sshd-version>
+		<m:dependency.management__com.sun.xml.parsers__jaxp-ri__version>1.4.5</m:dependency.management__com.sun.xml.parsers__jaxp-ri__version>
+		<m:dependency.management__org.jruby__jruby__version>1.7.12</m:dependency.management__org.jruby__jruby__version>
+		<m:dependency.management__javax.annotation__jsr250-api__version>1.0</m:dependency.management__javax.annotation__jsr250-api__version>
+		<m:properties__xml-resolver-version>1.2</m:properties__xml-resolver-version>
+		<m:properties__castor-bundle-version>1.3.2_2</m:properties__castor-bundle-version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:dependency.management__org.apache.camel__camel-rmi__version>2.13.2</m:dependency.management__org.apache.camel__camel-rmi__version>
+		<m:properties__maven-remote-resources-plugin-version>1.4</m:properties__maven-remote-resources-plugin-version>
+		<m:properties__bcel-bundle-version>5.2_4</m:properties__bcel-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-example-cafe__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-cafe__version>
+		<m:properties__woodstox-version>4.2.1</m:properties__woodstox-version>
+		<m:properties__pax-exam-version>2.6.0</m:properties__pax-exam-version>
+		<m:dependency.management__org.apache.camel__camel-example-servlet-tomcat__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-servlet-tomcat__version>
+		<m:properties__commons-dbcp-bundle-version>1.4_3</m:properties__commons-dbcp-bundle-version>
+		<m:dependency.management__org.eclipse.jetty__jetty-io__version>8.1.14.v20131031</m:dependency.management__org.eclipse.jetty__jetty-io__version>
+		<m:dependency.management__org.apache.camel__camel-example-etl__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-etl__version>
+		<m:properties__mustache-bundle-version>0.8.15_1/</m:properties__mustache-bundle-version>
+		<m:properties__hibernate-validator-version>5.0.3.Final</m:properties__hibernate-validator-version>
+		<m:properties__cxf-version-range>[2.6,4.0)</m:properties__cxf-version-range>
+		<m:properties__fop-bundle-version>1.1_1</m:properties__fop-bundle-version>
+		<m:dependency.management__com.googlecode.concurrentlinkedhashmap__concurrentlinkedhashmap-lru__version>1.4</m:dependency.management__com.googlecode.concurrentlinkedhashmap__concurrentlinkedhashmap-lru__version>
+		<m:properties__cometd-bayeux-version>6.1.11</m:properties__cometd-bayeux-version>
+		<m:dependency.management__org.easymock__easymock__version>3.2</m:dependency.management__org.easymock__easymock__version>
+		<m:properties__maven-war-plugin-version>2.4</m:properties__maven-war-plugin-version>
+		<m:dependency.management__org.apache.camel__camel-solr__version>2.13.2</m:dependency.management__org.apache.camel__camel-solr__version>
+		<m:properties__spring-integration-version>2.2.6.RELEASE</m:properties__spring-integration-version>
+		<m:dependency.management__org.apache.camel__camel-cxf-transport__version>2.13.2</m:dependency.management__org.apache.camel__camel-cxf-transport__version>
+		<m:properties__geronimo-jpa2-spec-version>1.1</m:properties__geronimo-jpa2-spec-version>
+		<m:dependency.management__org.codehaus.plexus__plexus-utils__version>1.5.6</m:dependency.management__org.codehaus.plexus__plexus-utils__version>
+		<m:dependency.management__commons-logging__commons-logging__version>1.1.3</m:dependency.management__commons-logging__commons-logging__version>
+		<m:properties__cometd-java-client-version>2.4.3</m:properties__cometd-java-client-version>
+		<m:properties__xbean-asm4-bundle-version>3.14</m:properties__xbean-asm4-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-cxf__version>2.13.2</m:dependency.management__org.apache.camel__camel-cxf__version>
+		<m:properties__pax-runner-version>1.7.6</m:properties__pax-runner-version>
+		<m:properties__jexcelapi-version>2.4.2</m:properties__jexcelapi-version>
+		<m:properties__kxml2-bundle-version>2.3.0_2</m:properties__kxml2-bundle-version>
+		<m:properties__maven-failsafe-plugin-version>2.13</m:properties__maven-failsafe-plugin-version>
+		<m:dependency.management__org.apache.camel__camel-test-spring__version>2.13.2</m:dependency.management__org.apache.camel__camel-test-spring__version>
+		<m:properties__solr-bundle-version>4.6.1_1</m:properties__solr-bundle-version>
+		<m:properties__lucene-bundle-version>4.6.1_1</m:properties__lucene-bundle-version>
+		<m:properties__concurrentlinkedhashmap.version>1.4</m:properties__concurrentlinkedhashmap.version>
+		<m:properties__saxon-version>9.5.1-4</m:properties__saxon-version>
+		<m:dependency.management__org.apache.camel__camel-ssh__version>2.13.2</m:dependency.management__org.apache.camel__camel-ssh__version>
+		<m:properties__netty3-version>3.9.2.Final</m:properties__netty3-version>
+		<m:properties__pojosr-version>0.2.1</m:properties__pojosr-version>
+		<m:properties__cobertura-maven-plugin-version>2.5.2</m:properties__cobertura-maven-plugin-version>
+		<m:properties__hawtbuf-version>1.10</m:properties__hawtbuf-version>
+		<m:dependency.management__org.apache.camel__camel-weather__version>2.13.2</m:dependency.management__org.apache.camel__camel-weather__version>
+		<m:dependency.management__org.apache.camel__camel-zookeeper__version>2.13.2</m:dependency.management__org.apache.camel__camel-zookeeper__version>
+		<m:properties__disruptor-version>3.2.1</m:properties__disruptor-version>
+		<m:properties__geronimo-annotation-spec-version>1.1.1</m:properties__geronimo-annotation-spec-version>
+		<m:dependency.management__org.apache.camel__camel-example-route-throttling__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-route-throttling__version>
+		<m:properties__geronimo-j2ee-connector-spec-version>2.0.0</m:properties__geronimo-j2ee-connector-spec-version>
+		<m:dependency.management__org.apache.camel__camel-example-sql__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-sql__version>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__scalatest-version>2.0</m:properties__scalatest-version>
+		<m:dependency.management__org.apache.camel__camel-josql__version>2.13.2</m:dependency.management__org.apache.camel__camel-josql__version>
+		<m:dependency.management__org.apache.camel__camel-core-osgi__version>2.13.2</m:dependency.management__org.apache.camel__camel-core-osgi__version>
+		<m:properties__cglib-version>2.2</m:properties__cglib-version>
+		<m:properties__saxon-bundle-version>9.5.1-4_1</m:properties__saxon-bundle-version>
+		<m:properties__google-app-engine-version>1.8.3</m:properties__google-app-engine-version>
+		<m:properties__json-smart-version>1.2</m:properties__json-smart-version>
+		<m:properties__aspectj-version>1.6.2</m:properties__aspectj-version>
+		<m:dependency.management__org.apache.camel__camel-kafka__version>2.13.2</m:dependency.management__org.apache.camel__camel-kafka__version>
+		<m:dependency.management__org.apache.camel__camel-cxf__exclusion_0>com.sun.xml.bind__jaxb-impl</m:dependency.management__org.apache.camel__camel-cxf__exclusion_0>
+		<m:dependency.management__org.apache.camel__camel-syslog__version>2.13.2</m:dependency.management__org.apache.camel__camel-syslog__version>
+		<m:properties__jasypt-version>1.9.1</m:properties__jasypt-version>
+		<m:properties__saaj-impl-version>1.3.2_2</m:properties__saaj-impl-version>
+		<m:properties__maven-antrun-plugin-version>1.6</m:properties__maven-antrun-plugin-version>
+		<m:properties__maven-javadoc-plugin-version>2.9.1</m:properties__maven-javadoc-plugin-version>
+		<m:dependency.management__httpunit__httpunit__version>1.7</m:dependency.management__httpunit__httpunit__version>
+		<m:properties__jboss-javaee-6-version>1.0.0.Final</m:properties__jboss-javaee-6-version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jpa_2.0_spec__version>1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jpa_2.0_spec__version>
+		<m:properties__httpclient-version>3.1</m:properties__httpclient-version>
+		<m:properties__servlet-version-range>[2.5,4)</m:properties__servlet-version-range>
+		<m:properties__log4j-version>1.2.17</m:properties__log4j-version>
+		<m:properties__asm-version>3.3.1</m:properties__asm-version>
+		<m:properties__derby-version>10.10.2.0</m:properties__derby-version>
+		<m:dependency.management__org.apache.camel__camel-dns__version>2.13.2</m:dependency.management__org.apache.camel__camel-dns__version>
+		<m:properties__maven-jboss-as-maven-plugin-version>7.4.Final</m:properties__maven-jboss-as-maven-plugin-version>
+		<m:properties__xmlunit-version>1.5</m:properties__xmlunit-version>
+		<m:properties__stax2-api-bundle-version>3.1.4</m:properties__stax2-api-bundle-version>
+		<m:dependency.management__org.codehaus.mojo__exec-maven-plugin__version>1.2.1</m:dependency.management__org.codehaus.mojo__exec-maven-plugin__version>
+		<m:dependency.management__stax__stax-api__version>1.0.1</m:dependency.management__stax__stax-api__version>
+		<m:dependency.management__org.apache.camel__camel-juel__version>2.13.2</m:dependency.management__org.apache.camel__camel-juel__version>
+		<m:properties__pax-logging-version>1.7.1</m:properties__pax-logging-version>
+		<m:dependency.management__org.apache.camel__camel-urlrewrite__version>2.13.2</m:dependency.management__org.apache.camel__camel-urlrewrite__version>
+		<m:dependency.management__org.springframework__spring-test__version>3.2.8.RELEASE</m:dependency.management__org.springframework__spring-test__version>
+		<m:properties__gmaven-plugin-version>1.4</m:properties__gmaven-plugin-version>
+		<m:dependency.management__org.apache.camel.tests__org.apache.camel.tests.mock-javamail_1.7__version>2.13.2</m:dependency.management__org.apache.camel.tests__org.apache.camel.tests.mock-javamail_1.7__version>
+		<m:properties__jaxb-bundle-version>2.2.1.1_2</m:properties__jaxb-bundle-version>
+		<m:dependency.management__net.sf.dozer__dozer__version>5.4.0</m:dependency.management__net.sf.dozer__dozer__version>
+		<m:properties__fop-version>1.1</m:properties__fop-version>
+		<m:dependency.management__org.hibernate__hibernate-entitymanager__version>4.2.13.Final</m:dependency.management__org.hibernate__hibernate-entitymanager__version>
+		<m:properties__maven-shade-plugin-version>2.1</m:properties__maven-shade-plugin-version>
+		<m:dependency.management__org.apache.camel__camel-xmlsecurity__version>2.13.2</m:dependency.management__org.apache.camel__camel-xmlsecurity__version>
+		<m:properties__jclouds-google-guava-version>15.0</m:properties__jclouds-google-guava-version>
+		<m:dependency.management__org.apache.camel__camel-blueprint__version>2.13.2</m:dependency.management__org.apache.camel__camel-blueprint__version>
+		<m:dependency.management__org.apache.camel__camel-example-ftp__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-ftp__version>
+		<m:properties__juel-bundle-version>2.1.3_1</m:properties__juel-bundle-version>
+		<m:dependency.management__org.ccil.cowan.tagsoup__tagsoup__version>1.2.1</m:dependency.management__org.ccil.cowan.tagsoup__tagsoup__version>
+		<m:properties__maven-surefire-plugin-version>2.16</m:properties__maven-surefire-plugin-version>
+		<m:properties__xmlgraphics-batik-version>1.7</m:properties__xmlgraphics-batik-version>
+		<m:properties__stringtemplate-version>4.0.2</m:properties__stringtemplate-version>
+		<m:dependency.management__org.apache.camel__camel-lucene__version>2.13.2</m:dependency.management__org.apache.camel__camel-lucene__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-security__version>8.1.14.v20131031</m:dependency.management__org.eclipse.jetty__jetty-security__version>
+		<m:dependency.management__org.apache.camel__camel-nagios__version>2.13.2</m:dependency.management__org.apache.camel__camel-nagios__version>
+		<m:properties__dnsjava-version>2.1.1</m:properties__dnsjava-version>
+		<m:properties__maven-install-plugin-version>2.4</m:properties__maven-install-plugin-version>
+		<m:properties__aries-blueprint-core-version>1.1.0</m:properties__aries-blueprint-core-version>
+		<m:properties__slf4j-version>1.7.7</m:properties__slf4j-version>
+		<m:properties__jain-sip-ri-bundle-version>1.2.154_2</m:properties__jain-sip-ri-bundle-version>
+		<m:dependency.management__org.testng__testng__version>6.8.8</m:dependency.management__org.testng__testng__version>
+		<m:properties__jt400-version>6.7</m:properties__jt400-version>
+		<m:dependency.management__org.apache.aries.blueprint__org.apache.aries.blueprint__version>1.1.0</m:dependency.management__org.apache.aries.blueprint__org.apache.aries.blueprint__version>
+		<m:properties__xmlrpc-version>3.1.3</m:properties__xmlrpc-version>
+		<m:dependency.management__org.apache.camel__camel-ftp__version>2.13.2</m:dependency.management__org.apache.camel__camel-ftp__version>
+		<m:dependency.management__org.apache.camel__camel-freemarker__version>2.13.2</m:dependency.management__org.apache.camel__camel-freemarker__version>
+		<m:properties__spring4-version>4.0.2.RELEASE</m:properties__spring4-version>
+		<m:dependency.management__org.apache.camel__camel-servlet__version>2.13.2</m:dependency.management__org.apache.camel__camel-servlet__version>
+		<m:dependency.management__org.apache.camel__camel-quartz__version>2.13.2</m:dependency.management__org.apache.camel__camel-quartz__version>
+		<m:dependency.management__org.apache.camel__camel-jxpath__version>2.13.2</m:dependency.management__org.apache.camel__camel-jxpath__version>
+		<m:properties__abdera-version>1.1.3</m:properties__abdera-version>
+		<m:properties__velocity-tools-version>2.0</m:properties__velocity-tools-version>
+		<m:dependency.management__org.apache.activemq__activemq-spring__version>5.9.1</m:dependency.management__org.apache.activemq__activemq-spring__version>
+		<m:properties__openwebbeans-version>1.1.5</m:properties__openwebbeans-version>
+		<m:properties__junit-bundle-version>4.11_1</m:properties__junit-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-example-bam__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-bam__version>
+		<m:dependency.management__org.apache.camel__camel-jdbc__version>2.13.2</m:dependency.management__org.apache.camel__camel-jdbc__version>
+		<m:properties__spring-ldap-version>1.3.1.RELEASE</m:properties__spring-ldap-version>
+		<m:properties__jexcelapi-bundle-version>2.4.2_4</m:properties__jexcelapi-bundle-version>
+		<m:properties__rome-bundle-version>1.0_3</m:properties__rome-bundle-version>
+		<m:properties__commons-dbcp-version>1.4</m:properties__commons-dbcp-version>
+		<m:properties__xalan-version>2.7.1</m:properties__xalan-version>
+		<m:dependency.management__org.mockito__mockito-core__version>1.9.5</m:dependency.management__org.mockito__mockito-core__version>
+		<m:properties__commons-digester-version>2.1</m:properties__commons-digester-version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__version>2.6.0</m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__version>
+		<m:properties__java-apns-bundle-version>0.2.3_1</m:properties__java-apns-bundle-version>
+		<m:properties__maven-compiler-plugin-version>2.5.1</m:properties__maven-compiler-plugin-version>
+		<m:dependency.management__org.apache.camel__camel-context__version>2.13.2</m:dependency.management__org.apache.camel__camel-context__version>
+		<m:properties__smack-version>3.2.1</m:properties__smack-version>
+		<m:dependency.management__org.apache.camel__camel-example-simplejirabot-javadsl__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-simplejirabot-javadsl__version>
+		<m:properties__camel.osgi.symbolic.name>${project.groupId}.${project.artifactId}</m:properties__camel.osgi.symbolic.name>
+		<m:properties__hazelcast-version>3.0.3</m:properties__hazelcast-version>
+		<m:properties__camel.osgi.import.strict.version>version=&quot;[$(version;===;${camel.osgi.version.clean}),$(version;==+;${camel.osgi.version.clean}))&quot;</m:properties__camel.osgi.import.strict.version>
+		<m:properties__spring-data-commons-version>1.5.0.RELEASE</m:properties__spring-data-commons-version>
+		<m:dependency.management__org.springframework__spring-orm__version>3.2.8.RELEASE</m:dependency.management__org.springframework__spring-orm__version>
+		<m:dependency.management__com.sun.xml.bind__jaxb-xjc__version>2.1.13</m:dependency.management__com.sun.xml.bind__jaxb-xjc__version>
+		<m:properties__hadoop2-bundle-version>2.3.0_2</m:properties__hadoop2-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-protobuf__version>2.13.2</m:dependency.management__org.apache.camel__camel-protobuf__version>
+		<m:dependency.management__org.apache.camel__camel-spring-javaconfig__version>2.13.2</m:dependency.management__org.apache.camel__camel-spring-javaconfig__version>
+		<m:properties__camel.osgi.import>${camel.osgi.import.pkg}</m:properties__camel.osgi.import>
+		<m:dependency.management__org.apache.camel__camel-example-osgi-rmi__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-osgi-rmi__version>
+		<m:properties__jcr-version>2.0</m:properties__jcr-version>
+		<m:dependency.management__org.apache.maven.archetype__archetype-packaging__version>2.0</m:dependency.management__org.apache.maven.archetype__archetype-packaging__version>
+		<m:properties__rhino-version>1.7R2</m:properties__rhino-version>
+		<m:properties__mybatis-version>3.2.7</m:properties__mybatis-version>
+		<m:dependency.management__org.apache.camel__camel-rx__version>2.13.2</m:dependency.management__org.apache.camel__camel-rx__version>
+		<m:properties__gentlyweb-bundle-version>1.5_1</m:properties__gentlyweb-bundle-version>
+		<m:properties__spring-ws-version>2.1.4.RELEASE</m:properties__spring-ws-version>
+		<m:properties__commons-math-version>2.2</m:properties__commons-math-version>
+		<m:dependency.management__org.apache.camel__camel-example-cxf__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-cxf__version>
+		<m:dependency.management__org.apache.openjpa__openjpa-persistence-jdbc__version>2.3.0</m:dependency.management__org.apache.openjpa__openjpa-persistence-jdbc__version>
+		<m:properties__jetty-version>8.1.14.v20131031</m:properties__jetty-version>
+		<m:dependency.management__org.hibernate__hibernate-entitymanager__exclusion_0>javax.transaction__jta</m:dependency.management__org.hibernate__hibernate-entitymanager__exclusion_0>
+		<m:dependency.management__org.apache.camel__camel-testng__version>2.13.2</m:dependency.management__org.apache.camel__camel-testng__version>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:dependency.management__org.apache.camel__camel-example-jms-file__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-jms-file__version>
+		<m:properties__jdom-version>1.1.3</m:properties__jdom-version>
+		<m:properties__xmlbeans-version>2.6.0</m:properties__xmlbeans-version>
+		<m:dependency.management__org.apache.activemq__activemq-kahadb-store__version>5.9.1</m:dependency.management__org.apache.activemq__activemq-kahadb-store__version>
+		<m:properties__xmlsec-version>1.5.6</m:properties__xmlsec-version>
+		<m:properties__classmate-version>1.0.0</m:properties__classmate-version>
+		<m:properties__karaf-version>2.3.3</m:properties__karaf-version>
+		<m:properties__jsmpp-version>2.1.0_4</m:properties__jsmpp-version>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.7.7</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:properties__javax.el-version>2.2.4</m:properties__javax.el-version>
+		<m:dependency.management__org.apache.camel__camel-ahc__version>2.13.2</m:dependency.management__org.apache.camel__camel-ahc__version>
+		<m:properties__ahc-version>1.8.5</m:properties__ahc-version>
+		<m:properties__jmockit-version>1.5</m:properties__jmockit-version>
+		<m:properties__openjpa-version>2.3.0</m:properties__openjpa-version>
+		<m:properties__jclouds-version>1.7.2</m:properties__jclouds-version>
+		<m:properties__irclib-version>1.10</m:properties__irclib-version>
+		<m:dependency.management__org.apache.camel__camel-atom__version>2.13.2</m:dependency.management__org.apache.camel__camel-atom__version>
+		<m:dependency.management__org.osgi__org.osgi.compendium__version>4.3.1</m:dependency.management__org.osgi__org.osgi.compendium__version>
+		<m:properties__yammer-metrics-version>2.2.0</m:properties__yammer-metrics-version>
+		<m:dependency.management__org.apache.maven.reporting__maven-reporting-api__version>2.2.1</m:dependency.management__org.apache.maven.reporting__maven-reporting-api__version>
+		<m:dependency.management__org.apache.camel__camel-cometd__version>2.13.2</m:dependency.management__org.apache.camel__camel-cometd__version>
+		<m:properties__irclib-bundle-version>1.10_5</m:properties__irclib-bundle-version>
+		<m:properties__javax.el-api-version>2.2.4</m:properties__javax.el-api-version>
+		<m:properties__geronimo-jcdi-1.0-spec-version>1.0</m:properties__geronimo-jcdi-1.0-spec-version>
+		<m:properties__weld2-version>2.1.2.Final</m:properties__weld2-version>
+		<m:properties__maven-reporting-impl-version>2.0.5</m:properties__maven-reporting-impl-version>
+		<m:dependency.management__org.apache.camel__camel-http4__version>2.13.2</m:dependency.management__org.apache.camel__camel-http4__version>
+		<m:dependency.management__org.apache.camel__camel-splunk__version>2.13.2</m:dependency.management__org.apache.camel__camel-splunk__version>
+		<m:properties__asm-bundle-version>3.3.1_1</m:properties__asm-bundle-version>
+		<m:properties__aws-java-sdk-version>1.7.12</m:properties__aws-java-sdk-version>
+		<m:dependency.management__org.apache.activemq__activemq-pool__version>5.9.1</m:dependency.management__org.apache.activemq__activemq-pool__version>
+		<m:properties__geronimo-ws-metadata-spec-version>1.1.3</m:properties__geronimo-ws-metadata-spec-version>
+		<m:properties__commons-csv-bundle-version>1.0-r706899_5</m:properties__commons-csv-bundle-version>
+		<m:properties__servlet-api-3.0-version>1.0</m:properties__servlet-api-3.0-version>
+		<m:dependency.management__org.apache.camel__camel-example-cxf-tomcat__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-cxf-tomcat__version>
+		<m:dependency.management__org.apache.camel__camel-netty-http__version>2.13.2</m:dependency.management__org.apache.camel__camel-netty-http__version>
+		<m:dependency.management__org.optaplanner__optaplanner-core__version>6.0.1.Final</m:dependency.management__org.optaplanner__optaplanner-core__version>
+		<m:properties__scala-maven-plugin-version>3.1.6</m:properties__scala-maven-plugin-version>
+		<m:dependency.management__org.apache.camel__camel-aws__version>2.13.2</m:dependency.management__org.apache.camel__camel-aws__version>
+		<m:properties__felix-configadmin-version>1.4.0</m:properties__felix-configadmin-version>
+		<m:properties__openejb-version>4.5.2</m:properties__openejb-version>
+		<m:properties__maven-surefire-report-plugin-version>2.13</m:properties__maven-surefire-report-plugin-version>
+		<m:properties__spring-ldap-bundle-version>1.3.1.RELEASE_2</m:properties__spring-ldap-bundle-version>
+		<m:dependency.management__org.hsqldb__hsqldb__version>2.3.2</m:dependency.management__org.hsqldb__hsqldb__version>
+		<m:properties__spring-castor-bundle-version>1.2.0</m:properties__spring-castor-bundle-version>
+		<m:properties__easymock-version>3.2</m:properties__easymock-version>
+		<m:dependency.management__org.apache.camel__camel-spring-ws__version>2.13.2</m:dependency.management__org.apache.camel__camel-spring-ws__version>
+		<m:dependency.management__org.apache.camel__camel-spring-security__version>2.13.2</m:dependency.management__org.apache.camel__camel-spring-security__version>
+		<m:dependency.management__org.apache.camel__camel-jsonpath__version>2.13.2</m:dependency.management__org.apache.camel__camel-jsonpath__version>
+		<m:properties__backport-util-concurrent-version>3.1</m:properties__backport-util-concurrent-version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__jython-version>2.5.3</m:properties__jython-version>
+		<m:properties__avalon-bundle-version>4.3.1_1</m:properties__avalon-bundle-version>
+		<m:dependency.management__org.optaplanner__optaplanner-docs__version>6.0.1.Final</m:dependency.management__org.optaplanner__optaplanner-docs__version>
+		<m:properties__mustache-java-version>0.8.15</m:properties__mustache-java-version>
+		<m:dependency.management__com.thoughtworks.xstream__xstream__version>1.4.7</m:dependency.management__com.thoughtworks.xstream__xstream__version>
+		<m:properties__mina-version>1.1.7</m:properties__mina-version>
+		<m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.castor__version>1.3.2_2</m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.castor__version>
+		<m:dependency.management__org.apache.camel__camel-mvel__version>2.13.2</m:dependency.management__org.apache.camel__camel-mvel__version>
+		<m:properties__c3p0-version>0.9.1.2</m:properties__c3p0-version>
+		<m:properties__protobuf-version>2.5.0</m:properties__protobuf-version>
+		<m:properties__maven-eclipse-plugin-version>2.9</m:properties__maven-eclipse-plugin-version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-jta_1.1_spec__version>1.1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-jta_1.1_spec__version>
+		<m:properties__taglist-maven-plugin-version>2.4</m:properties__taglist-maven-plugin-version>
+		<m:dependency.management__org.apache.camel__camel-base64__version>2.13.2</m:dependency.management__org.apache.camel__camel-base64__version>
+		<m:properties__jsp-api-2.1-version>1.0.1</m:properties__jsp-api-2.1-version>
+		<m:dependency.management__org.apache.camel__camel-example-mybatis__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-mybatis__version>
+		<m:properties__jackrabbit-version>2.2.12</m:properties__jackrabbit-version>
+		<m:properties__jettison-version>1.3.5</m:properties__jettison-version>
+		<m:properties__spring-javaconfig-version>1.0.0-20090215</m:properties__spring-javaconfig-version>
+		<m:dependency.management__org.optaplanner__optaplanner-examples__version>6.0.1.Final</m:dependency.management__org.optaplanner__optaplanner-examples__version>
+		<m:properties__jackson-version>1.9.12</m:properties__jackson-version>
+		<m:properties__jsonlib-version>2.4</m:properties__jsonlib-version>
+		<m:dependency.management__org.apache.camel__camel-script__version>2.13.2</m:dependency.management__org.apache.camel__camel-script__version>
+		<m:dependency.management__org.apache.camel__camel-avro__version>2.13.2</m:dependency.management__org.apache.camel__camel-avro__version>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-mock__version>1.2.1</m:dependency.management__org.springframework.osgi__spring-osgi-mock__version>
+		<m:dependency.management__org.apache.camel__camel-xmlbeans__version>2.13.2</m:dependency.management__org.apache.camel__camel-xmlbeans__version>
+		<m:dependency.management__org.apache.camel__camel-stax__version>2.13.2</m:dependency.management__org.apache.camel__camel-stax__version>
+		<m:dependency.management__org.apache.maven__maven-plugin-api__version>2.0</m:dependency.management__org.apache.maven__maven-plugin-api__version>
+		<m:dependency.management__org.apache.camel__camel-jclouds__version>2.13.2</m:dependency.management__org.apache.camel__camel-jclouds__version>
+		<m:properties__commons-compress-version>1.5</m:properties__commons-compress-version>
+		<m:properties__maven-bundle-version>${maven-bundle-plugin-version}</m:properties__maven-bundle-version>
+		<m:properties__tagsoup-version>1.2.1</m:properties__tagsoup-version>
+		<m:dependency.management__org.apache.camel__camel-salesforce__version>2.13.2</m:dependency.management__org.apache.camel__camel-salesforce__version>
+		<m:dependency.management__org.apache.camel__camel-jibx__version>2.13.2</m:dependency.management__org.apache.camel__camel-jibx__version>
+		<m:properties__snmp4j-version>2.2.5_1</m:properties__snmp4j-version>
+		<m:properties__jodatime-bundle-version>1.6.2</m:properties__jodatime-bundle-version>
+		<m:properties__jing-bundle-version>20030619_5</m:properties__jing-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-spring__version>2.13.2</m:dependency.management__org.apache.camel__camel-spring__version>
+		<m:dependency.management__org.apache.camel__camel-hl7__version>2.13.2</m:dependency.management__org.apache.camel__camel-hl7__version>
+		<m:dependency.management__org.springframework__spring-context__version>3.2.8.RELEASE</m:dependency.management__org.springframework__spring-context__version>
+		<m:properties__cmis-version>0.8.0</m:properties__cmis-version>
+		<m:properties__hawtdispatch-version>1.21</m:properties__hawtdispatch-version>
+		<m:dependency.management__org.apache.camel__camel-vertx__version>2.13.2</m:dependency.management__org.apache.camel__camel-vertx__version>
+		<m:dependency.management__org.apache.camel__camel-flatpack__version>2.13.2</m:dependency.management__org.apache.camel__camel-flatpack__version>
+		<m:dependency.management__org.apache.camel__camel-example-reportincident__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-reportincident__version>
+		<m:properties__pdfbox-version>1.6.0</m:properties__pdfbox-version>
+		<m:properties__httpcore4-version>4.3.2</m:properties__httpcore4-version>
+		<m:dependency.management__org.apache.camel__camel-routebox__version>2.13.2</m:dependency.management__org.apache.camel__camel-routebox__version>
+		<m:properties__lucene-version>4.6.1</m:properties__lucene-version>
+		<m:dependency.management__org.springframework__spring-jms__version>3.2.8.RELEASE</m:dependency.management__org.springframework__spring-jms__version>
+		<m:properties__jibx-version>1.2.5</m:properties__jibx-version>
+		<m:properties__commons-logging-version>1.1.3</m:properties__commons-logging-version>
+		<m:dependency.management__com.google.guava__guava__version>16.0.1</m:dependency.management__com.google.guava__guava__version>
+		<m:properties__maven-bundle-plugin-version>2.3.7</m:properties__maven-bundle-plugin-version>
+		<m:dependency.management__commons-dbcp__commons-dbcp__version>1.4</m:dependency.management__commons-dbcp__commons-dbcp__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-connector_1.5_spec__version>2.0.0</m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-connector_1.5_spec__version>
+		<m:properties__plexus-utils-version>1.5.6</m:properties__plexus-utils-version>
+		<m:properties__xstream-version>1.4.7</m:properties__xstream-version>
+		<m:properties__camel.osgi.export.service>org.apache.camel.spi.ComponentResolver;component=ejb</m:properties__camel.osgi.export.service>
+		<m:dependency.management__org.apache.camel__camel-example-loan-broker__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-loan-broker__version>
+		<m:dependency.management__org.apache.ws.commons.axiom__axiom-impl__version>1.2.14</m:dependency.management__org.apache.ws.commons.axiom__axiom-impl__version>
+		<m:dependency.management__org.apache.camel__camel-paxlogging__version>2.13.2</m:dependency.management__org.apache.camel__camel-paxlogging__version>
+		<m:dependency.management__org.apache.ws.commons.axiom__axiom-api__version>1.2.14</m:dependency.management__org.apache.ws.commons.axiom__axiom-api__version>
+		<m:dependency.management__org.apache.camel__camel-shiro__version>2.13.2</m:dependency.management__org.apache.camel__camel-shiro__version>
+		<m:properties__hsqldb-version>2.3.2</m:properties__hsqldb-version>
+		<m:properties__bsh-version>2.0b5</m:properties__bsh-version>
+		<m:dependency.management__org.apache.camel__camel-bean-validator__version>2.13.2</m:dependency.management__org.apache.camel__camel-bean-validator__version>
+		<m:dependency.management__commons-httpclient__commons-httpclient__version>3.1</m:dependency.management__commons-httpclient__commons-httpclient__version>
+		<m:properties__spring-security-version>3.1.4.RELEASE</m:properties__spring-security-version>
+		<m:properties__httpclient4-version>4.3.3</m:properties__httpclient4-version>
+		<m:properties__stompjms-version>1.19</m:properties__stompjms-version>
+		<m:dependency.management__org.apache.camel__camel-tagsoup__version>2.13.2</m:dependency.management__org.apache.camel__camel-tagsoup__version>
+		<m:properties__cometd-java-server>2.3.1</m:properties__cometd-java-server>
+		<m:properties__quartz-bundle-version>1.8.6_1</m:properties__quartz-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-example-servlet-tomcat-no-spring__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-servlet-tomcat-no-spring__version>
+		<m:properties__xalan-bundle-version>2.7.1_7</m:properties__xalan-bundle-version>
+		<m:dependency.management__org.apache.zookeeper__zookeeper__version>3.4.6</m:dependency.management__org.apache.zookeeper__zookeeper__version>
+		<m:properties__apache-mime4j-version>0.7.2</m:properties__apache-mime4j-version>
+		<m:properties__shiro-version>1.2.3</m:properties__shiro-version>
+		<m:properties__jetty6-bundle-version>6.1.26_4</m:properties__jetty6-bundle-version>
+		<m:properties__cglib-bundle-version>2.1_3_7</m:properties__cglib-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-example-reportincident-ws-security-osgi__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-reportincident-ws-security-osgi__version>
+		<m:properties__google-gdata-version>1.41.5.w1</m:properties__google-gdata-version>
+		<m:dependency.management__org.apache.camel__camel-apns__version>2.13.2</m:dependency.management__org.apache.camel__camel-apns__version>
+		<m:properties__commons-collections-version>3.2.1</m:properties__commons-collections-version>
+		<m:properties__jedis-client-bundle-version>2.1.0_1</m:properties__jedis-client-bundle-version>
+		<m:properties__ical4j-version>1.0.5.2</m:properties__ical4j-version>
+		<m:dependency.management__com.google.inject__guice__version>3.0</m:dependency.management__com.google.inject__guice__version>
+		<m:dependency.management__org.apache.activemq__activemq-client__version>5.9.1</m:dependency.management__org.apache.activemq__activemq-client__version>
+		<m:properties__jsch-version>0.1.50</m:properties__jsch-version>
+		<m:dependency.management__org.apache.camel__camel-hazelcast__version>2.13.2</m:dependency.management__org.apache.camel__camel-hazelcast__version>
+		<m:properties__camel.osgi.private.pkg>!*</m:properties__camel.osgi.private.pkg>
+		<m:dependency.management__org.apache.activemq__activemq-broker__version>5.9.1</m:dependency.management__org.apache.activemq__activemq-broker__version>
+		<m:properties__maven-archetype-plugin-version>2.0</m:properties__maven-archetype-plugin-version>
+		<m:properties__neethi-bundle-version>3.0.1</m:properties__neethi-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-example-spring__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-spring__version>
+		<m:properties__hapi-version>2.1</m:properties__hapi-version>
+		<m:properties__xbean-spring-version>3.16</m:properties__xbean-spring-version>
+		<m:properties__kafka-version>0.8.1</m:properties__kafka-version>
+		<m:properties__msv-version>20050913</m:properties__msv-version>
+		<m:dependency.management__org.apache.camel__camel-scala__version>2.13.2</m:dependency.management__org.apache.camel__camel-scala__version>
+		<m:properties__jasypt-bundle-version>1.9.1_1</m:properties__jasypt-bundle-version>
+		<m:properties__maven-plugin-plugin-version>3.2</m:properties__maven-plugin-plugin-version>
+		<m:properties__camel.osgi.import.camel.version>version=&quot;[$(version;==;${camel.osgi.version.clean}),$(version;=+;${camel.osgi.version.clean}))&quot;</m:properties__camel.osgi.import.camel.version>
+		<m:properties__xpp3-bundle-version>1.1.4c_6</m:properties__xpp3-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-twitter__version>2.13.2</m:dependency.management__org.apache.camel__camel-twitter__version>
+		<m:dependency.management__org.springframework__spring-web__version>3.2.8.RELEASE</m:dependency.management__org.springframework__spring-web__version>
+		<m:properties__avalon-version>4.3.1</m:properties__avalon-version>
+		<m:properties__findbugs-maven-plugin-version>2.5.2</m:properties__findbugs-maven-plugin-version>
+		<m:properties__xerces-bundle-version>2.11.0_1</m:properties__xerces-bundle-version>
+		<m:dependency.management__org.apache.ftpserver__ftpserver-core__version>1.0.6</m:dependency.management__org.apache.ftpserver__ftpserver-core__version>
+		<m:properties__jsendnsca-version>1.3.1</m:properties__jsendnsca-version>
+		<m:properties__ode-version>1.3.4</m:properties__ode-version>
+		<m:properties__commons-codec-version>1.8</m:properties__commons-codec-version>
+		<m:dependency.management__org.apache.camel__camel-example-twitter-websocket-blueprint__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-twitter-websocket-blueprint__version>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.felix__maven-bundle-plugin__2.3.7|org.apache.maven.plugins__maven-surefire-plugin__2.16|org.codehaus.mojo__ianal-maven-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.felix__maven-bundle-plugin__2.3.7|org.apache.maven.plugins__maven-surefire-plugin__2.16|org.codehaus.mojo__ianal-maven-plugin__null|org.apache.camel__camel-package-maven-plugin__2.13.2|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.felix__maven-bundle-plugin__2.3.7|org.apache.maven.plugins__maven-surefire-plugin__2.16|org.codehaus.mojo__ianal-maven-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.felix__maven-bundle-plugin__2.3.7|org.apache.maven.plugins__maven-surefire-plugin__2.16|org.codehaus.mojo__ianal-maven-plugin__null|org.apache.camel__camel-package-maven-plugin__2.13.2</m:maven.plugins>
+		<m:properties__spring-retry-version>1.0.3.RELEASE</m:properties__spring-retry-version>
+		<m:properties__hbase-version>0.94.10</m:properties__hbase-version>
+		<m:dependency.management__org.apache.camel__camel-zipfile__version>2.13.2</m:dependency.management__org.apache.camel__camel-zipfile__version>
+		<m:properties__jini-version>2.1</m:properties__jini-version>
+		<m:dependency.management__org.apache.camel__camel-example-docs__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-docs__version>
+		<m:dependency.management__org.hsqldb__hsqldb__scope>test</m:dependency.management__org.hsqldb__hsqldb__scope>
+		<m:properties__qpid-version>0.26</m:properties__qpid-version>
+		<m:properties__lightcouch-version>0.0.6</m:properties__lightcouch-version>
+		<m:properties__slf4j-api-version>1.6.6</m:properties__slf4j-api-version>
+		<m:properties__arquillian-junit-container-version>1.0.0.CR7</m:properties__arquillian-junit-container-version>
+		<m:properties__jsch-bundle-version>0.1.50_1</m:properties__jsch-bundle-version>
+		<m:properties__rabbitmq-amqp-client-version>3.2.2</m:properties__rabbitmq-amqp-client-version>
+		<m:dependency.management__org.apache.camel__camel-jgroups__version>2.13.2</m:dependency.management__org.apache.camel__camel-jgroups__version>
+		<m:properties__hibernate-version>4.2.13.Final</m:properties__hibernate-version>
+		<m:dependency.management__org.eclipse.jetty__jetty-server__version>8.1.14.v20131031</m:dependency.management__org.eclipse.jetty__jetty-server__version>
+		<m:properties__mina2-version>2.0.7</m:properties__mina2-version>
+		<m:properties__geronimo-jms-spec-version>1.1.1</m:properties__geronimo-jms-spec-version>
+		<m:dependency.management__org.apache.camel__camel-guice__version>2.13.2</m:dependency.management__org.apache.camel__camel-guice__version>
+		<m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.ognl__version>3.0.8_1</m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.ognl__version>
+		<m:properties__spring-osgi-version>1.2.1</m:properties__spring-osgi-version>
+		<m:dependency.management__org.apache.camel__camel-xmljson__version>2.13.2</m:dependency.management__org.apache.camel__camel-xmljson__version>
+		<m:properties__ibatis-bundle-version>2.3.4.726_4</m:properties__ibatis-bundle-version>
+		<m:properties__geronimo-el-spec-version>1.0.1</m:properties__geronimo-el-spec-version>
+		<m:properties__twitter4j-version>3.0.5</m:properties__twitter4j-version>
+		<m:properties__optaplanner-version>6.0.1.Final</m:properties__optaplanner-version>
+		<m:properties__mvel-version>2.1.7.Final</m:properties__mvel-version>
+		<m:dependency.management__org.apache.camel__camel-example-management__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-management__version>
+		<m:properties__camel.osgi.split.pkg>-split-package:=first</m:properties__camel.osgi.split.pkg>
+		<m:properties__scriptengines-version>1.1</m:properties__scriptengines-version>
+		<m:properties__dnsjava-bundle-version>2.1.1_1</m:properties__dnsjava-bundle-version>
+		<m:properties__mock-javamail-version>1.7</m:properties__mock-javamail-version>
+		<m:properties__vertx-version>2.0.1-final</m:properties__vertx-version>
+		<m:dependency.management__org.apache.camel__camel-spring-integration__version>2.13.2</m:dependency.management__org.apache.camel__camel-spring-integration__version>
+		<m:dependency.management__org.codehaus.woodstox__woodstox-core-asl__version>4.2.1</m:dependency.management__org.codehaus.woodstox__woodstox-core-asl__version>
+		<m:dependency.management__org.apache.camel__camel-test__version>2.13.2</m:dependency.management__org.apache.camel__camel-test__version>
+		<m:properties__ognl-version>3.0.8_1</m:properties__ognl-version>
+		<m:dependency.management__org.apache.camel__camel-amqp__version>2.13.2</m:dependency.management__org.apache.camel__camel-amqp__version>
+		<m:dependency.management__com.sna-projects.krati__krati__version>0.4.9</m:dependency.management__com.sna-projects.krati__krati__version>
+		<m:properties__maven-clean-plugin-version>2.5</m:properties__maven-clean-plugin-version>
+		<m:dependency.management__org.springframework__spring-aop__version>3.2.8.RELEASE</m:dependency.management__org.springframework__spring-aop__version>
+		<m:properties__el-api-1.0-version>1.0.1</m:properties__el-api-1.0-version>
+		<m:properties__kie-version>6.0.0.Final</m:properties__kie-version>
+		<m:properties__freemarker-version>2.3.20</m:properties__freemarker-version>
+		<m:properties__paranamer-bundle-version>2.4_1</m:properties__paranamer-bundle-version>
+		<m:properties__paxexam-karaf-container-version>1.0.0</m:properties__paxexam-karaf-container-version>
+		<m:dependency.management__org.apache.camel__camel-exec__version>2.13.2</m:dependency.management__org.apache.camel__camel-exec__version>
+		<m:properties__aopalliance-bundle-version>1.0_6</m:properties__aopalliance-bundle-version>
+		<m:dependency.management__org.springframework__spring-core__version>3.2.8.RELEASE</m:dependency.management__org.springframework__spring-core__version>
+		<m:properties__maven-jar-plugin-version>2.4</m:properties__maven-jar-plugin-version>
+		<m:properties__maven-assembly-plugin-version>2.4</m:properties__maven-assembly-plugin-version>
+		<m:properties__jruby-version>1.7.12</m:properties__jruby-version>
+		<m:dependency.management__org.apache.camel__camel-hawtdb__version>2.13.2</m:dependency.management__org.apache.camel__camel-hawtdb__version>
+		<m:dependency.management__org.springframework__spring-jdbc__version>3.2.8.RELEASE</m:dependency.management__org.springframework__spring-jdbc__version>
+		<m:dependency.management__org.apache.camel__camel-jmx__version>2.13.2</m:dependency.management__org.apache.camel__camel-jmx__version>
+		<m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.snmp4j__version>2.2.5_1</m:dependency.management__org.apache.servicemix.bundles__org.apache.servicemix.bundles.snmp4j__version>
+		<m:properties__google-guava-version>16.0.1</m:properties__google-guava-version>
+		<m:dependency.management__org.apache.camel__camel-xstream__version>2.13.2</m:dependency.management__org.apache.camel__camel-xstream__version>
+		<m:properties__geronimo-j2ee-management-spec-version>1.1</m:properties__geronimo-j2ee-management-spec-version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jmx__version>8.1.14.v20131031</m:dependency.management__org.eclipse.jetty__jetty-jmx__version>
+		<m:dependency.management__org.apache.camel__camel-test-blueprint__version>2.13.2</m:dependency.management__org.apache.camel__camel-test-blueprint__version>
+		<m:dependency.management__org.apache.camel__camel-dozer__version>2.13.2</m:dependency.management__org.apache.camel__camel-dozer__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-jsr223__version>2.2.2</m:dependency.management__org.codehaus.groovy__groovy-jsr223__version>
+		<m:properties__spymemcached-bundle-version>2.5_2</m:properties__spymemcached-bundle-version>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__version>1.7.7</m:dependency.management__org.slf4j__slf4j-log4j12__version>
+		<m:properties__xmlbeans-maven-plugin-version>2.3.3</m:properties__xmlbeans-maven-plugin-version>
+		<m:properties__ibatis-version>2.3.4.726</m:properties__ibatis-version>
+		<m:properties__aries-blueprint-api-version>1.0.0</m:properties__aries-blueprint-api-version>
+		<m:properties__serp-bundle-version>1.14.1_1</m:properties__serp-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-bindy__version>2.13.2</m:dependency.management__org.apache.camel__camel-bindy__version>
+		<m:properties__camel.osgi.failok>false</m:properties__camel.osgi.failok>
+		<m:dependency.management__org.apache.maven__maven-project__version>2.0</m:dependency.management__org.apache.maven__maven-project__version>
+		<m:properties__avro-version>1.7.6</m:properties__avro-version>
+		<m:properties__xstream-bundle-version>1.4.7_1</m:properties__xstream-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-core-xml__version>2.13.2</m:dependency.management__org.apache.camel__camel-core-xml__version>
+		<m:properties__eclipse-equinox-common-version>3.3.0-v20070426</m:properties__eclipse-equinox-common-version>
+		<m:dependency.management__org.apache.camel__camel-hdfs2__version>2.13.2</m:dependency.management__org.apache.camel__camel-hdfs2__version>
+		<m:properties__activemq-version>5.9.1</m:properties__activemq-version>
+		<m:properties__osgi-version>4.3.1</m:properties__osgi-version>
+		<m:properties__velocity-version>1.7</m:properties__velocity-version>
+		<m:properties__bouncycastle-version>1.49</m:properties__bouncycastle-version>
+		<m:dependency.management__org.apache.camel__camel-mybatis__version>2.13.2</m:dependency.management__org.apache.camel__camel-mybatis__version>
+		<m:properties__apacheds-version>1.5.7</m:properties__apacheds-version>
+		<m:properties__smack-bundle-version>3.2.1_1</m:properties__smack-bundle-version>
+		<m:dependency.management__xml-apis__xml-apis__version>1.4.01</m:dependency.management__xml-apis__xml-apis__version>
+		<m:properties__httpunit-version>1.7</m:properties__httpunit-version>
+		<m:dependency.management__org.apache.camel__camel-mqtt__version>2.13.2</m:dependency.management__org.apache.camel__camel-mqtt__version>
+		<m:dependency.management__org.apache.camel__camel-irc__version>2.13.2</m:dependency.management__org.apache.camel__camel-irc__version>
+		<m:properties__stringtemplate-bundle-version>4.0.2_2</m:properties__stringtemplate-bundle-version>
+		<m:properties__atomikos-transactions-version>3.9.3</m:properties__atomikos-transactions-version>
+		<m:dependency.management__org.optaplanner__optaplanner-distribution__version>6.0.1.Final</m:dependency.management__org.optaplanner__optaplanner-distribution__version>
+		<m:dependency.management__org.codehaus.jettison__jettison__version>1.3.5</m:dependency.management__org.codehaus.jettison__jettison__version>
+		<m:properties__mongo-java-driver-version>2.11.4</m:properties__mongo-java-driver-version>
+		<m:dependency.management__org.apache.camel__camel-jsch__version>2.13.2</m:dependency.management__org.apache.camel__camel-jsch__version>
+		<m:properties__jboss-marshalling-version>1.3.18.GA</m:properties__jboss-marshalling-version>
+		<m:properties__josql-version>1.5</m:properties__josql-version>
+		<m:dependency.management__org.eclipse.jetty__jetty-client__version>8.1.14.v20131031</m:dependency.management__org.eclipse.jetty__jetty-client__version>
+		<m:dependency.management__org.apache.camel__camel-ibatis__version>2.13.2</m:dependency.management__org.apache.camel__camel-ibatis__version>
+		<m:properties__mockito-version>1.9.5</m:properties__mockito-version>
+		<m:properties__geronimo-interceptor-1.1-spec-version>1.0</m:properties__geronimo-interceptor-1.1-spec-version>
+		<m:properties__eclipse-compiler-version>4.2.2</m:properties__eclipse-compiler-version>
+		<m:dependency.management__org.optaplanner__optaplanner-benchmark__version>6.0.1.Final</m:dependency.management__org.optaplanner__optaplanner-benchmark__version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-management_1.0_spec__version>1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-management_1.0_spec__version>
+		<m:properties__isorelax-bundle-version>20050913_4</m:properties__isorelax-bundle-version>
+		<m:properties__mina-bundle-version>1.1.7_6</m:properties__mina-bundle-version>
+		<m:properties__hawtdb-version>1.6</m:properties__hawtdb-version>
+		<m:dependency.management__org.codehaus.woodstox__woodstox-core-asl__exclusion_0>javax.xml.stream__stax-api</m:dependency.management__org.codehaus.woodstox__woodstox-core-asl__exclusion_0>
+		<m:properties__aries-blueprint-proxy-impl-version>1.0.1</m:properties__aries-blueprint-proxy-impl-version>
+		<m:dependency.management__org.apache.camel__camel-soap__version>2.13.2</m:dependency.management__org.apache.camel__camel-soap__version>
+		<m:dependency.management__org.apache.camel__camel-netty__version>2.13.2</m:dependency.management__org.apache.camel__camel-netty__version>
+		<m:properties__felix-fileinstall-version>3.2.6</m:properties__felix-fileinstall-version>
+		<m:properties__solr-version>4.6.1</m:properties__solr-version>
+		<m:properties__spymemcached-version>2.8.4</m:properties__spymemcached-version>
+		<m:dependency.management__org.apache.camel__camel-eclipse__version>2.13.2</m:dependency.management__org.apache.camel__camel-eclipse__version>
+		<m:properties__stax-api-version>1.0.1</m:properties__stax-api-version>
+		<m:properties__jetty6-version>6.1.26</m:properties__jetty6-version>
+		<m:properties__ws-commons-util-bundle-version>1.0.2_2</m:properties__ws-commons-util-bundle-version>
+		<m:properties__jsmpp-bundle-version>2.1.0_4</m:properties__jsmpp-bundle-version>
+		<m:properties__leveldbjni-version>1.8</m:properties__leveldbjni-version>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-core__version>1.2.1</m:dependency.management__org.springframework.osgi__spring-osgi-core__version>
+		<m:properties__aries-util-version>1.1.0</m:properties__aries-util-version>
+		<m:properties__oscache-bundle-version>2.4_5</m:properties__oscache-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-rabbitmq__version>2.13.2</m:dependency.management__org.apache.camel__camel-rabbitmq__version>
+		<m:dependency.management__org.apache.camel__camel-beanio__version>2.13.2</m:dependency.management__org.apache.camel__camel-beanio__version>
+		<m:properties__commons-digester-1x-version>1.8.1</m:properties__commons-digester-1x-version>
+		<m:dependency.management__com.sun.xml.bind__jaxb-impl__version>2.1.13</m:dependency.management__com.sun.xml.bind__jaxb-impl__version>
+		<m:properties__restlet-version>2.1.7</m:properties__restlet-version>
+		<m:dependency.management__org.apache.camel__camel-jaxb__version>2.13.2</m:dependency.management__org.apache.camel__camel-jaxb__version>
+		<m:properties__maven-checkstyle-plugin-version>2.9.1</m:properties__maven-checkstyle-plugin-version>
+		<m:properties__maven-source-plugin-version>2.2.1</m:properties__maven-source-plugin-version>
+		<m:dependency.management__org.apache.camel__camel-example-spring-javaconfig__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-spring-javaconfig__version>
+		<m:dependency.management__org.apache.camel__camel-guava-eventbus__version>2.13.2</m:dependency.management__org.apache.camel__camel-guava-eventbus__version>
+		<m:dependency.management__org.apache.camel__camel-msv__version>2.13.2</m:dependency.management__org.apache.camel__camel-msv__version>
+		<m:properties__xmlrpc-client-bundle-version>3.1.3_1</m:properties__xmlrpc-client-bundle-version>
+		<m:properties__rxjava-version>0.17.5</m:properties__rxjava-version>
+		<m:properties__facebook4j-core-version>1.1.12</m:properties__facebook4j-core-version>
+		<m:properties__aries-blueprint-proxy-version>1.0.0</m:properties__aries-blueprint-proxy-version>
+		<m:properties__build-helper-maven-plugin-version>1.8</m:properties__build-helper-maven-plugin-version>
+		<m:dependency.management__org.apache.camel__camel-sip__version>2.13.2</m:dependency.management__org.apache.camel__camel-sip__version>
+		<m:dependency.management__org.apache.camel__camel-example-osgi__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-osgi__version>
+		<m:dependency.management__org.apache.camel__camel-websocket__version>2.13.2</m:dependency.management__org.apache.camel__camel-websocket__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-servlet__version>8.1.14.v20131031</m:dependency.management__org.eclipse.jetty__jetty-servlet__version>
+		<m:dependency.management__org.apache.camel__camel-hdfs__version>2.13.2</m:dependency.management__org.apache.camel__camel-hdfs__version>
+		<m:properties__urlrewritefilter-bundle-version>4.0.4_1</m:properties__urlrewritefilter-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-sql__version>2.13.2</m:dependency.management__org.apache.camel__camel-sql__version>
+		<m:dependency.management__org.apache.camel__camel-csv__version>2.13.2</m:dependency.management__org.apache.camel__camel-csv__version>
+		<m:properties__hadoop2-version>2.3.0</m:properties__hadoop2-version>
+		<m:dependency.management__log4j__log4j__version>1.2.17</m:dependency.management__log4j__log4j__version>
+		<m:dependency.management__org.apache.karaf.tooling.exam__org.apache.karaf.tooling.exam.container__version>2.3.3</m:dependency.management__org.apache.karaf.tooling.exam__org.apache.karaf.tooling.exam.container__version>
+		<m:properties__hamcrest-version>1.3</m:properties__hamcrest-version>
+		<m:dependency.management__org.apache.camel__camel-castor__version>2.13.2</m:dependency.management__org.apache.camel__camel-castor__version>
+		<m:properties__jsendnsca-bundle-version>1.3.1_3</m:properties__jsendnsca-bundle-version>
+		<m:properties__camel.osgi.export.pkg>org.apache.camel.component.ejb.*</m:properties__camel.osgi.export.pkg>
+		<m:properties__xsdlib-version>2013.2</m:properties__xsdlib-version>
+		<m:properties__velocity-bundle-version>1.7_6</m:properties__velocity-bundle-version>
+		<m:properties__commons-httpclient-bundle-version>3.1_7</m:properties__commons-httpclient-bundle-version>
+		<m:dependency.management__org.codehaus.plexus__plexus-container-default__version>1.0-alpha-48</m:dependency.management__org.codehaus.plexus__plexus-container-default__version>
+		<m:properties__geronimo-ejb_3.1_spec-version>1.0.2</m:properties__geronimo-ejb_3.1_spec-version>
+		<m:properties__camel.osgi.exclude.dependencies>false</m:properties__camel.osgi.exclude.dependencies>
+		<m:properties__spring32-version>3.2.8.RELEASE</m:properties__spring32-version>
+		<m:properties__camel.osgi.export>${camel.osgi.export.pkg};${camel.osgi.version}</m:properties__camel.osgi.export>
+		<m:properties__site-repo-url>scpexe://people.apache.org/www/camel.apache.org/maven/</m:properties__site-repo-url>
+		<m:dependency.management__org.apache.camel__camel-geocoder__version>2.13.2</m:dependency.management__org.apache.camel__camel-geocoder__version>
+		<m:properties__aws-java-sdk-bundle-version>1.7.12_1</m:properties__aws-java-sdk-bundle-version>
+		<m:properties__rome-version>1.0</m:properties__rome-version>
+		<m:properties__splunk-version>1.2.0_1</m:properties__splunk-version>
+		<m:properties__ant-bundle-version>1.7.0_6</m:properties__ant-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-example-guice-jms__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-guice-jms__version>
+		<m:dependency.management__org.apache.camel__camel-example-spring-xquery__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-spring-xquery__version>
+		<m:dependency.management__org.apache.camel__camel-core__version>2.13.2</m:dependency.management__org.apache.camel__camel-core__version>
+		<m:properties__noggit-bundle-version>0.5_1</m:properties__noggit-bundle-version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-jacc_1.0_spec__version>1.1</m:dependency.management__org.apache.geronimo.specs__geronimo-j2ee-jacc_1.0_spec__version>
+		<m:dependency.management__org.apache.camel__camel-sjms__version>2.13.2</m:dependency.management__org.apache.camel__camel-sjms__version>
+		<m:properties__krati-version>0.4.9</m:properties__krati-version>
+		<m:properties__junit-version>4.11</m:properties__junit-version>
+		<m:properties__camel.osgi.import.default.version>[$(version;==;$(@)),$(version;+;$(@)))</m:properties__camel.osgi.import.default.version>
+		<m:dependency.management__org.apache.camel__camel-servletlistener__version>2.13.2</m:dependency.management__org.apache.camel__camel-servletlistener__version>
+		<m:dependency.management__commons-collections__commons-collections__version>3.2.1</m:dependency.management__commons-collections__commons-collections__version>
+		<m:properties__xmlschema-version>2.0</m:properties__xmlschema-version>
+		<m:properties__gson-version>2.2.4</m:properties__gson-version>
+		<m:properties__jasper-bundle-version>6.0.36_1</m:properties__jasper-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-cdi__version>2.13.2</m:dependency.management__org.apache.camel__camel-cdi__version>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__antlr-runtime-bundle-version>3.4_2</m:properties__antlr-runtime-bundle-version>
+		<m:properties__ehcache-version>2.8.3</m:properties__ehcache-version>
+		<m:properties__camel.osgi.import.defaults>
+      org.osgi.framework*;version=&quot;[1.5,2)&quot;,
+      org.springframework.ws.*;version=&quot;[2,3)&quot;,
+      org.springframework.xml.*;version=&quot;[2,3)&quot;,
+      org.springframework.*;version=&quot;${spring-version-range}&quot;,
+      org.apache.commons.logging.*;version=&quot;[1.1,2)&quot;,
+      org.apache.cxf.*;version=&quot;${cxf-version-range}&quot;,
+      org.apache.qpid.*;version=&quot;[0.20,1)&quot;,
+      org.apache.abdera.*;version=&quot;[0.4,2)&quot;,
+      org.apache.commons.httpclient.*;version=&quot;[3.1,4.0)&quot;,
+      org.apache.velocity.*;version=&quot;[1.6.2,2)&quot;,
+      org.apache.xmlbeans.*;version=&quot;[2.4,3)&quot;,
+      org.eclipse.jetty.*;version=&quot;[7.5,8.2)&quot;,
+      com.thoughtworks.xstream.*;version=&quot;[1.3,2)&quot;,
+      org.antlr.stringtemplate.*;version=&quot;[3.0,4)&quot;,
+      org.jivesoftware.smack.*;version=&quot;[3.0,4)&quot;,
+      org.ccil.cowan.tagsoup.*;version=&quot;[1.2,2)&quot;,
+      org.mortbay.cometd.*;version=&quot;[6.1,7)&quot;,
+      org.slf4j.*;version=&quot;[1.6,2)&quot;,
+      net.sf.flatpack.*;version=&quot;[3.1.1,4)&quot;,
+      net.sf.saxon.*;version=&quot;[9.3.0,9.6)&quot;,
+      freemarker.*;version=&quot;[2.3.15,3)&quot;,
+      javax.persistence.*;version=&quot;[1.1,3)&quot;,
+      org.apache.lucene.*;version=&quot;${lucene-version-range}&quot;,
+      org.apache.solr.*;version=&quot;${solr-version-range}&quot;,
+    </m:properties__camel.osgi.import.defaults>
+		<m:dependency.management__org.apache.activemq__activemq-camel__version>5.9.1</m:dependency.management__org.apache.activemq__activemq-camel__version>
+		<m:properties__xerces-version>2.11.0</m:properties__xerces-version>
+		<m:dependency.management__org.apache.camel__camel-example-tracer__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-tracer__version>
+		<m:dependency.management__org.apache.camel__camel-rss__version>2.13.2</m:dependency.management__org.apache.camel__camel-rss__version>
+		<m:dependency.management__org.apache.camel__camel-mustache__version>2.13.2</m:dependency.management__org.apache.camel__camel-mustache__version>
+		<m:properties__geronimo-j2ee-jacc-spec-version>1.1</m:properties__geronimo-j2ee-jacc-spec-version>
+		<m:properties__commons-beanutils-bundle-version>1.8.3_1</m:properties__commons-beanutils-bundle-version>
+		<m:properties__geocoder-java-version>0.15</m:properties__geocoder-java-version>
+		<m:dependency.management__org.apache.camel__camel-javaspace__version>2.13.2</m:dependency.management__org.apache.camel__camel-javaspace__version>
+		<m:properties__regexp-bundle-version>1.4_1</m:properties__regexp-bundle-version>
+		<m:properties__felix-framework-version>3.2.2</m:properties__felix-framework-version>
+		<m:properties__javax-inject-bundle-version>1_2</m:properties__javax-inject-bundle-version>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.apache.camel__camel-saxon__version>2.13.2</m:dependency.management__org.apache.camel__camel-saxon__version>
+		<m:dependency.management__net.sf.saxon__Saxon-HE__version>9.5.1-4</m:dependency.management__net.sf.saxon__Saxon-HE__version>
+		<m:properties__maven-reporting-api-version>2.2.1</m:properties__maven-reporting-api-version>
+		<m:properties__hbase-bundle-version>0.94.6_1</m:properties__hbase-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-sap-netweaver__version>2.13.2</m:dependency.management__org.apache.camel__camel-sap-netweaver__version>
+		<m:dependency.management__org.apache.camel__camel-infinispan__version>2.13.2</m:dependency.management__org.apache.camel__camel-infinispan__version>
+		<m:properties__elasticsearch-bundle-version>1.0.0_1</m:properties__elasticsearch-bundle-version>
+		<m:properties__kafka-bundle-version>0.8.1_1</m:properties__kafka-bundle-version>
+		<m:dependency.management__org.apache.mina__mina-core__version>1.1.7</m:dependency.management__org.apache.mina__mina-core__version>
+		<m:properties__geronimo-jta-spec-version>1.1.1</m:properties__geronimo-jta-spec-version>
+		<m:dependency.management__org.apache.camel__camel-facebook__version>2.13.2</m:dependency.management__org.apache.camel__camel-facebook__version>
+		<m:properties__rhino-bundle-version>1.7R2_3</m:properties__rhino-bundle-version>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__commons-cli-version>1.2</m:properties__commons-cli-version>
+		<m:dependency.management__org.apache.camel__camel-gson__version>2.13.2</m:dependency.management__org.apache.camel__camel-gson__version>
+		<m:properties__commons-lang-version-xmljson>2.5</m:properties__commons-lang-version-xmljson>
+		<m:properties__oro-bundle-version>2.0.8_6</m:properties__oro-bundle-version>
+		<m:properties__commons-vfs2-version>2.0</m:properties__commons-vfs2-version>
+		<m:dependency.management__org.apache.httpcomponents__httpcore-nio__version>4.3.2</m:dependency.management__org.apache.httpcomponents__httpcore-nio__version>
+		<m:dependency.management__org.apache.maven.reporting__maven-reporting-impl__version>2.0.5</m:dependency.management__org.apache.maven.reporting__maven-reporting-impl__version>
+		<m:properties__hadoop-version>1.2.1</m:properties__hadoop-version>
+		<m:properties__quartz-version-range>[1.8,2)</m:properties__quartz-version-range>
+		<m:properties__quartz2-version>2.2.1</m:properties__quartz2-version>
+		<m:dependency.management__org.osgi__org.osgi.core__version>4.3.1</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:properties__weld-version>1.1.18.Final</m:properties__weld-version>
+		<m:properties__cometd-java-server-bundle-version>2.3.1_2</m:properties__cometd-java-server-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-crypto__version>2.13.2</m:dependency.management__org.apache.camel__camel-crypto__version>
+		<m:dependency.management__org.apache.camel__camel-mina2__version>2.13.2</m:dependency.management__org.apache.camel__camel-mina2__version>
+		<m:dependency.management__org.apache.camel__camel-snmp__version>2.13.2</m:dependency.management__org.apache.camel__camel-snmp__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-webapp__version>8.1.14.v20131031</m:dependency.management__org.eclipse.jetty__jetty-webapp__version>
+		<m:properties__maven-archetype-packaging-version>2.0</m:properties__maven-archetype-packaging-version>
+		<m:dependency.management__xerces__xercesImpl__version>2.11.0</m:dependency.management__xerces__xercesImpl__version>
+		<m:properties__java-apns-version>0.2.3</m:properties__java-apns-version>
+		<m:dependency.management__org.codehaus.groovy__groovy-all__version>2.2.2</m:dependency.management__org.codehaus.groovy__groovy-all__version>
+		<m:dependency.management__org.apache.camel__camel-eventadmin__version>2.13.2</m:dependency.management__org.apache.camel__camel-eventadmin__version>
+		<m:properties__urlrewritefilter-version>4.0.4</m:properties__urlrewritefilter-version>
+		<m:dependency.management__xalan__xalan__version>2.7.1</m:dependency.management__xalan__xalan__version>
+		<m:dependency.management__org.apache.camel__camel-mongodb__version>2.13.2</m:dependency.management__org.apache.camel__camel-mongodb__version>
+		<m:properties__werken-xpath-bundle-version>0.9.4_5</m:properties__werken-xpath-bundle-version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.6.6</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:properties__maven-version>2.0</m:properties__maven-version>
+		<m:dependency.management__org.apache.camel__camel-leveldb__version>2.13.2</m:dependency.management__org.apache.camel__camel-leveldb__version>
+		<m:properties__xom-version>1.2.5</m:properties__xom-version>
+		<m:properties__jgroups-version>3.4.1.Final</m:properties__jgroups-version>
+		<m:properties__drools-version>6.0.0.Final</m:properties__drools-version>
+		<m:dependency.management__org.apache.camel__camel-manual__version>2.13.2</m:dependency.management__org.apache.camel__camel-manual__version>
+		<m:dependency.management__org.apache.camel__camel-cmis__version>2.13.2</m:dependency.management__org.apache.camel__camel-cmis__version>
+		<m:properties__xmlgraphics-commons-bundle-version>1.5_1</m:properties__xmlgraphics-commons-bundle-version>
+		<m:dependency.management__org.springframework__spring-beans__version>3.2.8.RELEASE</m:dependency.management__org.springframework__spring-beans__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-servlets__version>8.1.14.v20131031</m:dependency.management__org.eclipse.jetty__jetty-servlets__version>
+		<m:dependency.management__org.apache.camel__camel-spring-redis__version>2.13.2</m:dependency.management__org.apache.camel__camel-spring-redis__version>
+		<m:properties__servicemix-specs-version>2.2.0</m:properties__servicemix-specs-version>
+		<m:properties__scala-version>2.10.4</m:properties__scala-version>
+		<m:properties__javacrumbs-version>0.22</m:properties__javacrumbs-version>
+		<m:dependency.management__org.springframework__spring-expression__version>3.2.8.RELEASE</m:dependency.management__org.springframework__spring-expression__version>
+		<m:properties__validation-api-version>1.1.0.Final</m:properties__validation-api-version>
+		<m:properties__ezmorph-bundle-version>1.0.6_1</m:properties__ezmorph-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-restlet__version>2.13.2</m:dependency.management__org.apache.camel__camel-restlet__version>
+		<m:properties__jackson2-version>2.3.3</m:properties__jackson2-version>
+		<m:properties__jsonlib-bundle-version>2.4_1</m:properties__jsonlib-bundle-version>
+		<m:properties__javax-mail-version>1.4.7</m:properties__javax-mail-version>
+		<m:properties__arquillian-weld-ee-embedded-version>1.0.0.CR3</m:properties__arquillian-weld-ee-embedded-version>
+		<m:dependency.management__com.lmax__disruptor__version>3.2.1</m:dependency.management__com.lmax__disruptor__version>
+		<m:properties__freemarker-bundle-version>2.3.20_1</m:properties__freemarker-bundle-version>
+		<m:properties__commons-pool-version>1.6</m:properties__commons-pool-version>
+		<m:dependency.management__org.apache.camel__camel-example-aggregate__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-aggregate__version>
+		<m:properties__pax-tiny-bundle-version>1.3.1</m:properties__pax-tiny-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-stomp__version>2.13.2</m:dependency.management__org.apache.camel__camel-stomp__version>
+		<m:properties__josql-bundle-version>1.5_5</m:properties__josql-bundle-version>
+		<m:properties__jodatime2-bundle-version>2.3</m:properties__jodatime2-bundle-version>
+		<m:properties__geronimo-jsp-spec-version>1.1</m:properties__geronimo-jsp-spec-version>
+		<m:properties__ftpserver-version>1.0.6</m:properties__ftpserver-version>
+		<m:dependency.management__net.sf.ehcache__ehcache__version>2.8.3</m:dependency.management__net.sf.ehcache__ehcache__version>
+		<m:dependency.management__org.apache.camel__camel-quartz2__version>2.13.2</m:dependency.management__org.apache.camel__camel-quartz2__version>
+		<m:dependency.management__org.apache.camel__camel-quickfix__version>2.13.2</m:dependency.management__org.apache.camel__camel-quickfix__version>
+		<m:properties__spring-version-range>[3.2,4)</m:properties__spring-version-range>
+		<m:dependency.management__org.apache.camel__camel-bam__version>2.13.2</m:dependency.management__org.apache.camel__camel-bam__version>
+		<m:dependency.management__org.apache.camel__camel-jt400__version>2.13.2</m:dependency.management__org.apache.camel__camel-jt400__version>
+		<m:properties__spring-data-redis-version>1.1.1.RELEASE</m:properties__spring-data-redis-version>
+		<m:dependency.management__org.apache.camel__camel-spring-batch__version>2.13.2</m:dependency.management__org.apache.camel__camel-spring-batch__version>
+		<m:properties__commons-lang-version>2.6</m:properties__commons-lang-version>
+		<m:dependency.management__org.apache.camel__camel-ejb__version>2.13.2</m:dependency.management__org.apache.camel__camel-ejb__version>
+		<m:properties__jboss-logging-version>3.1.4.GA</m:properties__jboss-logging-version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.configadmin__version>1.4.0</m:dependency.management__org.apache.felix__org.apache.felix.configadmin__version>
+		<m:properties__geronimo-atinject-1.0-spec-version>1.0</m:properties__geronimo-atinject-1.0-spec-version>
+		<m:dependency.management__org.apache.camel__camel-jing__version>2.13.2</m:dependency.management__org.apache.camel__camel-jing__version>
+		<m:dependency.management__org.apache.camel.karaf__camel-karaf-commands__version>2.13.2</m:dependency.management__org.apache.camel.karaf__camel-karaf-commands__version>
+		<m:dependency.management__org.apache.camel__camel-disruptor__version>2.13.2</m:dependency.management__org.apache.camel__camel-disruptor__version>
+		<m:properties__mqtt-client-version>1.10</m:properties__mqtt-client-version>
+		<m:properties__quartz-version>1.8.6</m:properties__quartz-version>
+		<m:properties__xmlresolver-bundle-version>1.2_5</m:properties__xmlresolver-bundle-version>
+		<m:dependency.management__org.apache.geronimo.specs__geronimo-servlet_3.0_spec__version>1.0</m:dependency.management__org.apache.geronimo.specs__geronimo-servlet_3.0_spec__version>
+		<m:dependency.management__org.apache.camel__camel-example-netty-http__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-netty-http__version>
+		<m:dependency.management__org.apache.aries.blueprint__org.apache.aries.blueprint.core__version>1.1.0</m:dependency.management__org.apache.aries.blueprint__org.apache.aries.blueprint.core__version>
+		<m:properties__xml-apis-version>1.4.01</m:properties__xml-apis-version>
+		<m:properties__guice-bundle-version>3.0_1</m:properties__guice-bundle-version>
+		<m:properties__commons-daemon-version>1.0.15</m:properties__commons-daemon-version>
+		<m:properties__camel.osgi.version>version=${project.version}</m:properties__camel.osgi.version>
+		<m:properties__lucene-version-range>[4.5,5)</m:properties__lucene-version-range>
+		<m:properties__beanio-version>2.0.7</m:properties__beanio-version>
+		<m:properties__juel-version>2.1.3</m:properties__juel-version>
+		<m:dependency.management__org.apache.derby__derby__version>10.10.2.0</m:dependency.management__org.apache.derby__derby__version>
+		<m:properties__dom4j-bundle-version>1.6.1_5</m:properties__dom4j-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-ldap__version>2.13.2</m:dependency.management__org.apache.camel__camel-ldap__version>
+		<m:properties__jaxb-version>2.1.13</m:properties__jaxb-version>
+		<m:dependency.management__org.optaplanner__optaplanner-webexamples__version>6.0.1.Final</m:dependency.management__org.optaplanner__optaplanner-webexamples__version>
+		<m:properties__servlet-api-2.5-version>1.1.2</m:properties__servlet-api-2.5-version>
+		<m:properties__fastinfoset-version>1.2.13_1</m:properties__fastinfoset-version>
+		<m:dependency.management__org.apache.camel__camel-ruby__version>2.13.2</m:dependency.management__org.apache.camel__camel-ruby__version>
+		<m:dependency.management__commons-pool__commons-pool__version>1.6</m:dependency.management__commons-pool__commons-pool__version>
+		<m:dependency.management__org.apache.camel__camel-smpp__version>2.13.2</m:dependency.management__org.apache.camel__camel-smpp__version>
+		<m:properties__compiler.fork>true</m:properties__compiler.fork>
+		<m:properties__plexus-container-default-version>1.0-alpha-48</m:properties__plexus-container-default-version>
+		<m:dependency.management__org.apache.camel__camel-ical__version>2.13.2</m:dependency.management__org.apache.camel__camel-ical__version>
+		<m:properties__twitter4j-bundle-version>3.0.5_1</m:properties__twitter4j-bundle-version>
+		<m:dependency.management__org.apache.camel__camel-stringtemplate__version>2.13.2</m:dependency.management__org.apache.camel__camel-stringtemplate__version>
+		<m:dependency.management__org.apache.camel__camel-example-gae__version>2.13.2</m:dependency.management__org.apache.camel__camel-example-gae__version>
+		<m:dependency.management__org.apache.camel__camel-jpa__version>2.13.2</m:dependency.management__org.apache.camel__camel-jpa__version>
+		<m:properties__elasticsearch-version>1.0.0</m:properties__elasticsearch-version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="camel-ejb" type="bundle" ext="jar" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.apache.camel" name="camel-core" rev="2.13.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.openejb" name="openejb-core" rev="4.5.2" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.apache.camel" name="camel-test-spring" rev="2.13.2" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.slf4j" name="slf4j-log4j12" rev="1.7.7" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="4.11" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="org.springframework" module="spring-beans" matcher="exact" rev="3.2.8.RELEASE"/>
+		<override org="org.apache.camel" module="camel-guice" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-mybatis" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-spring-javaconfig" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-yammer" matcher="exact" rev="2.13.2"/>
+		<override org="commons-collections" module="commons-collections" matcher="exact" rev="3.2.1"/>
+		<override org="org.apache.camel" module="camel-example-ftp" matcher="exact" rev="2.13.2"/>
+		<override org="org.codehaus.jettison" module="jettison" matcher="exact" rev="1.3.5"/>
+		<override org="org.codehaus.mojo" module="exec-maven-plugin" matcher="exact" rev="1.2.1"/>
+		<override org="org.apache.camel" module="camel-example-etl" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-couchdb" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-sql" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-facebook" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-jsch" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-solr" matcher="exact" rev="2.13.2"/>
+		<override org="net.sf.dozer" module="dozer" matcher="exact" rev="5.4.0"/>
+		<override org="org.springframework" module="spring-tx" matcher="exact" rev="3.2.8.RELEASE"/>
+		<override org="org.apache.camel" module="camel-geocoder" matcher="exact" rev="2.13.2"/>
+		<override org="org.codehaus.woodstox" module="woodstox-core-asl" matcher="exact" rev="4.2.1"/>
+		<override org="com.sna-projects.krati" module="krati" matcher="exact" rev="0.4.9"/>
+		<override org="org.apache.camel" module="camel-kafka" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-j2ee-management_1.0_spec" matcher="exact" rev="1.1"/>
+		<override org="org.apache.camel" module="camel-mail" matcher="exact" rev="2.13.2"/>
+		<override org="org.ops4j.pax.runner" module="pax-runner-no-jcl" matcher="exact" rev="1.7.6"/>
+		<override org="org.apache.camel" module="camel-netty" matcher="exact" rev="2.13.2"/>
+		<override org="com.sun.xml.parsers" module="jaxp-ri" matcher="exact" rev="1.4.5"/>
+		<override org="org.apache.camel" module="camel-example-osgi" matcher="exact" rev="2.13.2"/>
+		<override org="commons-httpclient" module="commons-httpclient" matcher="exact" rev="3.1"/>
+		<override org="org.apache.camel" module="camel-sip" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.servicemix.bundles" module="org.apache.servicemix.bundles.snmp4j" matcher="exact" rev="2.2.5_1"/>
+		<override org="org.apache.camel" module="camel-ognl" matcher="exact" rev="2.13.2"/>
+		<override org="org.mockito" module="mockito-core" matcher="exact" rev="1.9.5"/>
+		<override org="org.apache.camel" module="camel-mongodb" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-javaspace" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-ruby" matcher="exact" rev="2.13.2"/>
+		<override org="org.springframework" module="spring-aop" matcher="exact" rev="3.2.8.RELEASE"/>
+		<override org="org.apache.camel" module="camel-gson" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-vertx" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-test-blueprint" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-blueprint" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-script" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-jing" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-xmlsecurity" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-servlet" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.maven" module="maven-plugin-api" matcher="exact" rev="2.0"/>
+		<override org="org.apache.camel" module="camel-rx" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-exec" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-stomp" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-irc" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-ftp" matcher="exact" rev="2.13.2"/>
+		<override org="org.eclipse.jetty" module="jetty-security" matcher="exact" rev="8.1.14.v20131031"/>
+		<override org="org.apache.camel" module="camel-bindy" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-management" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-hbase" matcher="exact" rev="2.13.2"/>
+		<override org="org.eclipse.jetty" module="jetty-servlet" matcher="exact" rev="8.1.14.v20131031"/>
+		<override org="log4j" module="log4j" matcher="exact" rev="1.2.17"/>
+		<override org="org.apache.camel" module="camel-josql" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-servlet-tomcat-no-spring" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-test-spring" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-lucene" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-cdi" matcher="exact" rev="2.13.2"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="16.0.1"/>
+		<override org="org.apache.camel" module="camel-example-jms-file" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-csv" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-jcr" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.avro" module="avro-ipc" matcher="exact" rev="1.7.6"/>
+		<override org="com.lmax" module="disruptor" matcher="exact" rev="3.2.1"/>
+		<override org="org.apache.camel" module="camel-restlet" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jta_1.1_spec" matcher="exact" rev="1.1.1"/>
+		<override org="org.apache.derby" module="derby" matcher="exact" rev="10.10.2.0"/>
+		<override org="org.apache.camel" module="camel-example-servlet-tomcat" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-http" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-bam" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-jgroups" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.xbean" module="xbean-spring" matcher="exact" rev="3.16"/>
+		<override org="org.apache.camel" module="camel-jaxb" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-spring-security" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.maven" module="maven-project" matcher="exact" rev="2.0"/>
+		<override org="org.springframework" module="spring-context" matcher="exact" rev="3.2.8.RELEASE"/>
+		<override org="org.springframework" module="spring-jms" matcher="exact" rev="3.2.8.RELEASE"/>
+		<override org="org.apache.camel" module="camel-groovy" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-jpa" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-xmlrpc" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-osgi-rmi" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-protobuf" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-j2ee-jacc_1.0_spec" matcher="exact" rev="1.1"/>
+		<override org="org.apache.camel" module="camel-kestrel" matcher="exact" rev="2.13.2"/>
+		<override org="xerces" module="xercesImpl" matcher="exact" rev="2.11.0"/>
+		<override org="org.apache.camel" module="camel-example-gae" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-spring-redis" matcher="exact" rev="2.13.2"/>
+		<override org="org.optaplanner" module="optaplanner-webexamples" matcher="exact" rev="6.0.1.Final"/>
+		<override org="org.apache.camel" module="camel-stax" matcher="exact" rev="2.13.2"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.11"/>
+		<override org="org.apache.camel" module="camel-zookeeper" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-juel" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-crypto" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-stream" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-optaplanner" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-cxf-proxy" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel.tests" module="org.apache.camel.tests.mock-javamail_1.7" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.activemq" module="activemq-spring" matcher="exact" rev="5.9.1"/>
+		<override org="org.eclipse.jetty" module="jetty-jmx" matcher="exact" rev="8.1.14.v20131031"/>
+		<override org="org.apache.camel" module="camel-jasypt" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-infinispan" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-ibatis" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-freemarker" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.activemq" module="activemq-kahadb-store" matcher="exact" rev="5.9.1"/>
+		<override org="org.apache.camel" module="camel-example-route-throttling" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-cmis" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-mina" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.ftpserver" module="ftpserver-core" matcher="exact" rev="1.0.6"/>
+		<override org="org.apache.camel" module="camel-core-xml" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-eventadmin" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-twitter-websocket" matcher="exact" rev="2.13.2"/>
+		<override org="org.springframework" module="spring-core" matcher="exact" rev="3.2.8.RELEASE"/>
+		<override org="httpunit" module="httpunit" matcher="exact" rev="1.7"/>
+		<override org="org.apache.ws.commons.axiom" module="axiom-api" matcher="exact" rev="1.2.14"/>
+		<override org="org.apache.camel" module="camel-rmi" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-testng" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-splunk" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-gae" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-xmlbeans" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.maven.reporting" module="maven-reporting-impl" matcher="exact" rev="2.0.5"/>
+		<override org="org.apache.camel" module="camel-core" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-snmp" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-xstream" matcher="exact" rev="2.13.2"/>
+		<override org="javax.annotation" module="jsr250-api" matcher="exact" rev="1.0"/>
+		<override org="org.jruby" module="jruby" matcher="exact" rev="1.7.12"/>
+		<override org="org.apache.camel" module="camel-example-cxf-tomcat" matcher="exact" rev="2.13.2"/>
+		<override org="org.ops4j.pax.swissbox" module="pax-swissbox-tinybundles" matcher="exact" rev="1.3.1"/>
+		<override org="org.apache.camel" module="camel-spring-ldap" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-jetty" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-nagios" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-jackson" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-cxf" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.activemq" module="activemq-camel" matcher="exact" rev="5.9.1"/>
+		<override org="org.apache.camel" module="camel-printer" matcher="exact" rev="2.13.2"/>
+		<override org="org.codehaus.groovy" module="groovy-jsr223" matcher="exact" rev="2.2.2"/>
+		<override org="org.springframework" module="spring-jdbc" matcher="exact" rev="3.2.8.RELEASE"/>
+		<override org="org.apache.camel" module="camel-fop" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-routebox" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-cache" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-hl7" matcher="exact" rev="2.13.2"/>
+		<override org="org.testng" module="testng" matcher="exact" rev="6.8.8"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-j2ee-connector_1.5_spec" matcher="exact" rev="2.0.0"/>
+		<override org="org.apache.camel" module="camel-example-bam" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.avro" module="avro" matcher="exact" rev="1.7.6"/>
+		<override org="com.sun.xml.bind" module="jaxb-impl" matcher="exact" rev="2.1.13"/>
+		<override org="org.apache.camel" module="camel-dozer" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-cafe" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-spring" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-castor" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-sjms" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-reportincident" matcher="exact" rev="2.13.2"/>
+		<override org="org.springframework" module="spring-test" matcher="exact" rev="3.2.8.RELEASE"/>
+		<override org="xalan" module="xalan" matcher="exact" rev="2.7.1"/>
+		<override org="org.apache.maven.reporting" module="maven-reporting-api" matcher="exact" rev="2.2.1"/>
+		<override org="org.apache.camel" module="camel-xmljson" matcher="exact" rev="2.13.2"/>
+		<override org="org.osgi" module="org.osgi.compendium" matcher="exact" rev="4.3.1"/>
+		<override org="net.sf.ehcache" module="ehcache" matcher="exact" rev="2.8.3"/>
+		<override org="org.apache.activemq" module="activemq-broker" matcher="exact" rev="5.9.1"/>
+		<override org="stax" module="stax-api" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.camel" module="camel-ical" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-netty-http" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-core-osgi" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-mqtt" matcher="exact" rev="2.13.2"/>
+		<override org="org.springframework.osgi" module="spring-osgi-mock" matcher="exact" rev="1.2.1"/>
+		<override org="org.apache.servicemix.bundles" module="org.apache.servicemix.bundles.castor" matcher="exact" rev="1.3.2_2"/>
+		<override org="org.apache.camel" module="camel-leveldb" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-ssh" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-jmx" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.ftpserver" module="ftplet-api" matcher="exact" rev="1.0.6"/>
+		<override org="org.apache.mina" module="mina-core" matcher="exact" rev="1.1.7"/>
+		<override org="xml-apis" module="xml-apis" matcher="exact" rev="1.4.01"/>
+		<override org="org.apache.camel" module="camel-example-loan-broker" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-mvel" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-jms" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.httpcomponents" module="httpcore-nio" matcher="exact" rev="4.3.2"/>
+		<override org="org.apache.ws.commons.axiom" module="axiom-impl" matcher="exact" rev="1.2.14"/>
+		<override org="org.apache.activemq" module="activemq-client" matcher="exact" rev="5.9.1"/>
+		<override org="org.apache.camel" module="camel-cxf-transport" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-disruptor" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-mustache" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-dns" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-quartz2" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-spring-ws" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-stringtemplate" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-urlrewrite" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-spring" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.aries.blueprint" module="org.apache.aries.blueprint" matcher="exact" rev="1.1.0"/>
+		<override org="org.apache.camel" module="camel-mina2" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-spring-batch" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-shiro" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-jt400" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-elasticsearch" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-ejb" matcher="exact" rev="2.13.2"/>
+		<override org="org.eclipse.jetty" module="jetty-servlets" matcher="exact" rev="8.1.14.v20131031"/>
+		<override org="org.apache.servicemix.bundles" module="org.apache.servicemix.bundles.ognl" matcher="exact" rev="3.0.8_1"/>
+		<override org="org.apache.camel" module="camel-context" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-atom" matcher="exact" rev="2.13.2"/>
+		<override org="org.eclipse.jetty" module="jetty-server" matcher="exact" rev="8.1.14.v20131031"/>
+		<override org="org.apache.camel" module="camel-spring-javaconfig" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-eclipse" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-zipfile" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-base64" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-apns" matcher="exact" rev="2.13.2"/>
+		<override org="org.eclipse.jetty" module="jetty-webapp" matcher="exact" rev="8.1.14.v20131031"/>
+		<override org="org.eclipse.jetty" module="jetty-util" matcher="exact" rev="8.1.14.v20131031"/>
+		<override org="org.apache.camel" module="camel-krati" matcher="exact" rev="2.13.2"/>
+		<override org="commons-dbcp" module="commons-dbcp" matcher="exact" rev="1.4"/>
+		<override org="org.codehaus.plexus" module="plexus-container-default" matcher="exact" rev="1.0-alpha-48"/>
+		<override org="org.optaplanner" module="optaplanner-benchmark" matcher="exact" rev="6.0.1.Final"/>
+		<override org="org.apache.camel" module="camel-netty-http" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-twitter-websocket-blueprint" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-soap" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-hdfs" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-sql" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jpa_2.0_spec" matcher="exact" rev="1.1"/>
+		<override org="org.apache.camel" module="camel-mybatis" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-amqp" matcher="exact" rev="2.13.2"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.6.6"/>
+		<override org="org.apache.camel" module="camel-xmpp" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-spring-integration" matcher="exact" rev="2.13.2"/>
+		<override org="org.optaplanner" module="optaplanner-examples" matcher="exact" rev="6.0.1.Final"/>
+		<override org="org.apache.aries.blueprint" module="org.apache.aries.blueprint.core" matcher="exact" rev="1.1.0"/>
+		<override org="org.apache.camel" module="camel-jdbc" matcher="exact" rev="2.13.2"/>
+		<override org="org.easymock" module="easymock" matcher="exact" rev="3.2"/>
+		<override org="org.apache.camel" module="camel-guava-eventbus" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-guice-jms" matcher="exact" rev="2.13.2"/>
+		<override org="org.springframework" module="spring-expression" matcher="exact" rev="3.2.8.RELEASE"/>
+		<override org="org.optaplanner" module="optaplanner-docs" matcher="exact" rev="6.0.1.Final"/>
+		<override org="org.apache.camel" module="camel-example-pojo-messaging" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-manual" matcher="exact" rev="2.13.2"/>
+		<override org="org.ops4j.pax.exam" module="pax-exam-junit4" matcher="exact" rev="2.6.0"/>
+		<override org="org.hibernate" module="hibernate-entitymanager" matcher="exact" rev="4.2.13.Final"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-servlet_3.0_spec" matcher="exact" rev="1.0"/>
+		<override org="org.optaplanner" module="optaplanner-distribution" matcher="exact" rev="6.0.1.Final"/>
+		<override org="org.apache.camel" module="camel-paxlogging" matcher="exact" rev="2.13.2"/>
+		<override org="com.google.inject" module="guice" matcher="exact" rev="3.0"/>
+		<override org="org.hsqldb" module="hsqldb" matcher="exact" rev="2.3.2"/>
+		<override org="org.apache.camel" module="camel-rabbitmq" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-aws" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-quartz" matcher="exact" rev="2.13.2"/>
+		<override org="org.eclipse.jetty" module="jetty-client" matcher="exact" rev="8.1.14.v20131031"/>
+		<override org="org.apache.camel" module="camel-syslog" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel.karaf" module="camel-karaf-commands" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-twitter" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-jclouds" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jms_1.1_spec" matcher="exact" rev="1.1.1"/>
+		<override org="org.apache.camel" module="camel-quickfix" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-smpp" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-weather" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-cometd" matcher="exact" rev="2.13.2"/>
+		<override org="org.springframework" module="spring-context-support" matcher="exact" rev="3.2.8.RELEASE"/>
+		<override org="commons-pool" module="commons-pool" matcher="exact" rev="1.6"/>
+		<override org="org.apache.camel" module="camel-hawtdb" matcher="exact" rev="2.13.2"/>
+		<override org="org.springframework.osgi" module="spring-osgi-core" matcher="exact" rev="1.2.1"/>
+		<override org="org.slf4j" module="slf4j-simple" matcher="exact" rev="1.7.7"/>
+		<override org="org.apache.camel" module="camel-hazelcast" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-reportincident-ws-security-osgi" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-cxf" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.felix" module="org.apache.felix.configadmin" matcher="exact" rev="1.4.0"/>
+		<override org="org.osgi" module="org.osgi.core" matcher="exact" rev="4.3.1"/>
+		<override org="org.apache.camel" module="camel-example-spring-xquery" matcher="exact" rev="2.13.2"/>
+		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.1.3"/>
+		<override org="org.apache.camel" module="camel-websocket" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-ldap" matcher="exact" rev="2.13.2"/>
+		<override org="org.slf4j" module="slf4j-log4j12" matcher="exact" rev="1.7.7"/>
+		<override org="org.optaplanner" module="optaplanner-core" matcher="exact" rev="6.0.1.Final"/>
+		<override org="org.apache.camel" module="camel-servletlistener" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-rss" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-beanio" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.4.6"/>
+		<override org="org.apache.camel" module="camel-sap-netweaver" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-bean-validator" matcher="exact" rev="2.13.2"/>
+		<override org="net.sf.saxon" module="Saxon-HE" matcher="exact" rev="9.5.1-4"/>
+		<override org="org.apache.camel" module="camel-ahc" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-velocity" matcher="exact" rev="2.13.2"/>
+		<override org="org.ccil.cowan.tagsoup" module="tagsoup" matcher="exact" rev="1.2.1"/>
+		<override org="com.googlecode.concurrentlinkedhashmap" module="concurrentlinkedhashmap-lru" matcher="exact" rev="1.4"/>
+		<override org="org.apache.camel" module="camel-example-docs" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-avro" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.httpcomponents" module="httpcore" matcher="exact" rev="4.3.2"/>
+		<override org="org.apache.karaf.tooling.exam" module="org.apache.karaf.tooling.exam.container" matcher="exact" rev="2.3.3"/>
+		<override org="org.apache.camel" module="camel-test" matcher="exact" rev="2.13.2"/>
+		<override org="org.springframework" module="spring-web" matcher="exact" rev="3.2.8.RELEASE"/>
+		<override org="org.apache.camel" module="camel-salesforce" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.openjpa" module="openjpa-persistence-jdbc" matcher="exact" rev="2.3.0"/>
+		<override org="org.codehaus.plexus" module="plexus-utils" matcher="exact" rev="1.5.6"/>
+		<override org="org.apache.camel" module="camel-example-tracer" matcher="exact" rev="2.13.2"/>
+		<override org="org.springframework" module="spring-orm" matcher="exact" rev="3.2.8.RELEASE"/>
+		<override org="org.codehaus.groovy" module="groovy-all" matcher="exact" rev="2.2.2"/>
+		<override org="org.apache.camel" module="camel-jxpath" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-saxon" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-flatpack" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-scala" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.activemq" module="activemq-pool" matcher="exact" rev="5.9.1"/>
+		<override org="com.thoughtworks.xstream" module="xstream" matcher="exact" rev="1.4.7"/>
+		<override org="org.easymock" module="easymockclassextension" matcher="exact" rev="3.2"/>
+		<override org="org.apache.camel" module="camel-jsonpath" matcher="exact" rev="2.13.2"/>
+		<override org="com.sun.xml.bind" module="jaxb-xjc" matcher="exact" rev="2.1.13"/>
+		<override org="org.apache.camel" module="camel-example-simplejirabot-javadsl" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-jibx" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-http4" matcher="exact" rev="2.13.2"/>
+		<override org="org.eclipse.jetty" module="jetty-io" matcher="exact" rev="8.1.14.v20131031"/>
+		<override org="org.apache.camel" module="camel-hdfs2" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-example-aggregate" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.maven.archetype" module="archetype-packaging" matcher="exact" rev="2.0"/>
+		<override org="org.apache.camel" module="camel-msv" matcher="exact" rev="2.13.2"/>
+		<override org="org.apache.camel" module="camel-tagsoup" matcher="exact" rev="2.13.2"/>
+	</dependencies>
+</ivy-module>

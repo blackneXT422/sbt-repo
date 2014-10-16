@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jboss</groupId>
+  <artifactId>jboss-client</artifactId>
+  <packaging>jar</packaging>
+  <name>JBoss Application Server Client</name>
+  <version>4.0.2</version>
+  <description>JBoss Application Server is a J2EE certified platform for developing and deploying enterprise Java applications, Web applications, and Portals. It provides the full range of J2EE 1.4 features as well as extended enterprise services including clustering, caching, and persistence.</description>
+  <url>http://www.jboss.com/</url>
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License</name>
+      <url>http://www.gnu.org/licenses/lgpl.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>http://anoncvs.forge.jboss.com/viewrep/JBoss/jboss</url>
+  </scm>
+</project>

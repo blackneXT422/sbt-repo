@@ -1,0 +1,17 @@
+# Set the java args to high
+
+-Xmx512M
+
+-XX:MaxPermSize=256m
+
+-XX:ReservedCodeCacheSize=128m
+
+
+
+# Set the extra SBT options
+
+-Dsbt.log.format=true
+
+-Dsbt.ivy.home=D:/GitHub/sbt-repo/sbt-ivy
+-Dsbt.global.base=D:/GitHub/sbt-repo/sbt-base
+-Dsbt.boot.directory=D:/GitHub/sbt-repo/sbt-base/boot/
