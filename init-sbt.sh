@@ -17,17 +17,28 @@ initSbtConfig(){
     sed -i "s:$opt:${dir}:" $conf
 }
 
+createLink() {
+    local sbtlink=~/bin/sbt
+    if [ $(id -u) -eq 0 ]; then
+        sbtlink=/usr/bin/sbt
+        [ -d ~/bin ] || mkdir ~/bin
+    fi
+    
+    if [ -e $sbtlink ]; then
+        ls -l $sbtlink
+        echo -e "\033[31mlink [$sbtlink] already exist, do you want replease it? \033[0m"
+        rm -i $sbtlink
+    fi
+    ln -s $SBT_DIR/bin/sbt $sbtlink
+
+}
+
 main(){
     initSbtConfig "__IVY_HOME__" $SBT_IVY
     initSbtConfig "__SBT_DIR__" $SBT_DIR
     initSbtConfig "__SBT_BOOT__" $SBT_BOOT
 
-    if [ -e /usr/bin/sbt ]; then
-        ls -l /usr/bin/sbt
-        echo -e "\033[31mlink [/usr/bin/sbt] already exist, do you want replease it? \033[0m"
-        rm -i /usr/bin/sbt
-    fi
-    ln -s $SBT_DIR/bin/sbt /usr/bin/sbt
+    createLink
 }
 
 main
