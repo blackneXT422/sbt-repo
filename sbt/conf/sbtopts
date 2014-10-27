@@ -14,17 +14,17 @@
 # Path to global settings/plugins directory (default: ~/.sbt)
 #
 #-sbt-dir  /etc/sbt
--sbt-dir  /JMP_DEV/Space-NG/sbt-repo/sbt
+-sbt-dir  /home/leolv/DevEnv/sbt/sbt-repo/sbt
 
 # Path to shared boot directory (default: ~/.sbt/boot in 0.11 series)
 #
 #-sbt-boot ~/.sbt/boot  
--sbt-boot /JMP_DEV/Space-NG/sbt-repo/sbt-base/boot
+-sbt-boot /home/leolv/DevEnv/sbt/sbt-repo/sbt-base/boot
 
 # Path to local Ivy repository (default: ~/.ivy2)
 #
 #-ivy ~/.ivy2
--ivy /JMP_DEV/Space-NG/sbt-repo/sbt-ivy
+-ivy /home/leolv/DevEnv/sbt/sbt-repo/sbt-ivy
 
 # set memory options
 #
