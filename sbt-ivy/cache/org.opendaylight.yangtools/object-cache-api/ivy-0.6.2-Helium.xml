@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.opendaylight.yangtools"
+		module="object-cache-api"
+		revision="0.6.2-Helium"
+		status="release"
+		publication="20141002093444"
+	>
+		<description homepage="" />
+		<m:properties__spring.version>3.1.3.RELEASE</m:properties__spring.version>
+		<m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-json-provider__version>2.3.2</m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-json-provider__version>
+		<m:properties__eclipse.persistence.version>2.5.0</m:properties__eclipse.persistence.version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-binding__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-binding__version>
+		<m:dependency.management__javax.ws.rs__jsr311-api__version>1.1.1</m:dependency.management__javax.ws.rs__jsr311-api__version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-common__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-common__version>
+		<m:dependency.management__geminiweb__org.eclipse.virgo.util.common__version>3.6.0.RELEASE</m:dependency.management__geminiweb__org.eclipse.virgo.util.common__version>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>1.0.9</m:dependency.management__ch.qos.logback__logback-classic__version>
+		<m:dependency.management__geminiweb__org.eclipse.gemini.web.tomcat__version>2.2.0.RELEASE</m:dependency.management__geminiweb__org.eclipse.gemini.web.tomcat__version>
+		<m:properties__failsafe.version>2.15</m:properties__failsafe.version>
+		<m:dependency.management__orbit__org.apache.coyote__version>7.0.53.v201406070630</m:dependency.management__orbit__org.apache.coyote__version>
+		<m:properties__karaf.version>3.0.1</m:properties__karaf.version>
+		<m:properties__sonar.jacoco.reportPath>target/code-coverage/jacoco.exec</m:properties__sonar.jacoco.reportPath>
+		<m:dependency.management__org.springframework__org.springframework.beans__version>3.1.3.RELEASE</m:dependency.management__org.springframework__org.springframework.beans__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__version>3.0.0</m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__version>
+		<m:properties__asm.version>4.1</m:properties__asm.version>
+		<m:dependency.management__equinoxSDK381__org.eclipse.equinox.ds__version>1.4.0.v20120522-1841</m:dependency.management__equinoxSDK381__org.eclipse.equinox.ds__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:properties__mockito.version>1.9.5</m:properties__mockito.version>
+		<m:dependency.management__org.opendaylight.yangtools.thirdparty__xtend-lib-osgi__scope>test</m:dependency.management__org.opendaylight.yangtools.thirdparty__xtend-lib-osgi__scope>
+		<m:dependency.management__org.opendaylight.yangtools.model__ietf-ted__version>2013.10.21.2-Helium</m:dependency.management__org.opendaylight.yangtools.model__ietf-ted__version>
+		<m:properties__java.version.target>1.7</m:properties__java.version.target>
+		<m:dependency.management__org.opendaylight.yangtools__features-test__scope>test</m:dependency.management__org.opendaylight.yangtools__features-test__scope>
+		<m:properties__ietf.restconf.version>2013.10.19.1-Helium</m:properties__ietf.restconf.version>
+		<m:dependency.management__org.hamcrest__hamcrest-core__scope>test</m:dependency.management__org.hamcrest__hamcrest-core__scope>
+		<m:dependency.management__orbit__org.apache.catalina.tribes__version>7.0.53.v201406070630</m:dependency.management__orbit__org.apache.catalina.tribes__version>
+		<m:properties__osgi.compendium.version>5.0.0</m:properties__osgi.compendium.version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.dependencymanager__version>3.1.0</m:dependency.management__org.apache.felix__org.apache.felix.dependencymanager__version>
+		<m:properties__maven.release.version>2.4.2</m:properties__maven.release.version>
+		<m:properties__maven.jar.version>2.3.2</m:properties__maven.jar.version>
+		<m:dependency.management__com.google.code.gson__gson__version>2.2.4</m:dependency.management__com.google.code.gson__gson__version>
+		<m:dependency.management__equinoxSDK381__org.apache.felix.gogo.shell__version>0.8.0.v201110170705</m:dependency.management__equinoxSDK381__org.apache.felix.gogo.shell__version>
+		<m:dependency.management__eclipselink__javax.resource__version>1.5.0.v200906010428</m:dependency.management__eclipselink__javax.resource__version>
+		<m:properties__maven.surefire.version>2.16</m:properties__maven.surefire.version>
+		<m:properties__commons.fileupload.version>1.2.2</m:properties__commons.fileupload.version>
+		<m:dependency.management__equinoxSDK381__org.eclipse.osgi__scope>test</m:dependency.management__equinoxSDK381__org.eclipse.osgi__scope>
+		<m:dependency.management__org.springframework.security__spring-security-config__version>3.1.3.RELEASE</m:dependency.management__org.springframework.security__spring-security-config__version>
+		<m:properties__felix.dependencymanager.shell.version>3.0.1</m:properties__felix.dependencymanager.shell.version>
+		<m:properties__logback.version>1.0.9</m:properties__logback.version>
+		<m:dependency.management__geminiweb__org.eclipse.gemini.web.core__version>2.2.0.RELEASE</m:dependency.management__geminiweb__org.eclipse.gemini.web.core__version>
+		<m:properties__felix.fileinstall.version>3.1.6</m:properties__felix.fileinstall.version>
+		<m:dependency.management__orbit__org.apache.tomcat.util__version>7.0.53.v201406070630</m:dependency.management__orbit__org.apache.tomcat.util__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.dependencymanager.shell__version>3.0.1</m:dependency.management__org.apache.felix__org.apache.felix.dependencymanager.shell__version>
+		<m:dependency.management__io.netty__netty-common__version>4.0.23.Final</m:dependency.management__io.netty__netty-common__version>
+		<m:properties__jersey2.version>2.8</m:properties__jersey2.version>
+		<m:properties__sonar.core.codeCoveragePlugin>jacoco</m:properties__sonar.core.codeCoveragePlugin>
+		<m:properties__maven.javadoc.version>2.9.1</m:properties__maven.javadoc.version>
+		<m:dependency.management__com.google.guava__guava__version>14.0.1</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__org.eclipse.persistence__org.eclipse.persistence.core__version>2.5.0</m:dependency.management__org.eclipse.persistence__org.eclipse.persistence.core__version>
+		<m:dependency.management__org.springframework__org.springframework.context.support__version>3.1.3.RELEASE</m:dependency.management__org.springframework__org.springframework.context.support__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__scope>test</m:dependency.management__org.ops4j.pax.url__pax-url-aether__scope>
+		<m:properties__gmaven.plugin.version>1.0</m:properties__gmaven.plugin.version>
+		<m:properties__compiler.version>2.3.2</m:properties__compiler.version>
+		<m:properties__commons.lang3.version>3.1</m:properties__commons.lang3.version>
+		<m:dependency.management__ch.qos.logback__logback-core__version>1.0.9</m:dependency.management__ch.qos.logback__logback-core__version>
+		<m:dependency.management__org.eclipse.equinox.http__servlet__version>1.0.0-v20070606</m:dependency.management__org.eclipse.equinox.http__servlet__version>
+		<m:properties__enforcer.version>1.3.1</m:properties__enforcer.version>
+		<m:dependency.management__xmlunit__xmlunit__scope>test</m:dependency.management__xmlunit__xmlunit__scope>
+		<m:properties__sonar.jacoco.itReportPath>target/code-coverage/jacoco-it.exec</m:properties__sonar.jacoco.itReportPath>
+		<m:dependency.management__equinoxSDK381__org.eclipse.equinox.util__version>1.0.400.v20120522-2049</m:dependency.management__equinoxSDK381__org.eclipse.equinox.util__version>
+		<m:properties__ietf.inet.types.version>2010.09.24.4-Helium</m:properties__ietf.inet.types.version>
+		<m:dependency.management__org.codehaus.groovy__groovy-xml__version>2.1.6</m:dependency.management__org.codehaus.groovy__groovy-xml__version>
+		<m:properties__ctrie.version>0.2.0</m:properties__ctrie.version>
+		<m:dependency.management__org.opendaylight.yangtools.thirdparty__antlr4-runtime-osgi-nohead__scope>test</m:dependency.management__org.opendaylight.yangtools.thirdparty__antlr4-runtime-osgi-nohead__scope>
+		<m:dependency.management__orbit__javax.servlet.jsp.jstl.impl__version>1.2.0.v201210211230</m:dependency.management__orbit__javax.servlet.jsp.jstl.impl__version>
+		<m:dependency.management__org.mockito__mockito-all__version>1.9.5</m:dependency.management__org.mockito__mockito-all__version>
+		<m:dependency.management__org.slf4j__slf4j-simple__scope>test</m:dependency.management__org.slf4j__slf4j-simple__scope>
+		<m:properties__ietf.topology.version>2013.10.21.2-Helium</m:properties__ietf.topology.version>
+		<m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>1.50</m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>
+		<m:dependency.management__org.opendaylight.yangtools__binding-generator-impl__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__binding-generator-impl__version>
+		<m:properties__jersey.client.version>1.17</m:properties__jersey.client.version>
+		<m:properties__commons.lang.version>2.6</m:properties__commons.lang.version>
+		<m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>1.50</m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-data-api__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-data-api__version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-maven-plugin-spi__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-maven-plugin-spi__version>
+		<m:dependency.management__org.apache.maven.shared__maven-verifier__scope>test</m:dependency.management__org.apache.maven.shared__maven-verifier__scope>
+		<m:dependency.management__org.opendaylight.yangtools.model__ietf-topology-l3-unicast__version>2013.10.21.2-Helium</m:dependency.management__org.opendaylight.yangtools.model__ietf-topology-l3-unicast__version>
+		<m:dependency.management__io.netty__netty-codec__version>4.0.23.Final</m:dependency.management__io.netty__netty-codec__version>
+		<m:properties__url.version>1.5.0</m:properties__url.version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-data-codec-gson__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-data-codec-gson__version>
+		<m:properties__commons.net.version>3.0.1</m:properties__commons.net.version>
+		<m:dependency.management__orbit__javax.annotation__version>1.1.0.v201209060031</m:dependency.management__orbit__javax.annotation__version>
+		<m:properties__propertymavenplugin.version>1.0-alpha-2</m:properties__propertymavenplugin.version>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-mock__version>1.2.1</m:dependency.management__org.springframework.osgi__spring-osgi-mock__version>
+		<m:dependency.management__orbit__javax.mail.glassfish__version>1.4.1.v201108011116</m:dependency.management__orbit__javax.mail.glassfish__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-json-org__version>2.3.2</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-json-org__version>
+		<m:dependency.management__orbit__javax.xml.rpc__version>1.1.0.v201005080400</m:dependency.management__orbit__javax.xml.rpc__version>
+		<m:dependency.management__orbit__org.apache.juli.extras__version>7.0.53.v201406060720</m:dependency.management__orbit__org.apache.juli.extras__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.2</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__version>1.7.2</m:dependency.management__org.slf4j__slf4j-log4j12__version>
+		<m:dependency.management__org.eclipse.persistence__org.eclipse.persistence.moxy__version>2.5.0</m:dependency.management__org.eclipse.persistence__org.eclipse.persistence.moxy__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-container-native__version>3.0.0</m:dependency.management__org.ops4j.pax.exam__pax-exam-container-native__version>
+		<m:dependency.management__org.apache.commons__commons-lang3__version>3.1</m:dependency.management__org.apache.commons__commons-lang3__version>
+		<m:properties__nexus.repository.release>opendaylight.release</m:properties__nexus.repository.release>
+		<m:dependency.management__org.glassfish.jersey.core__jersey-client__version>2.0</m:dependency.management__org.glassfish.jersey.core__jersey-client__version>
+		<m:properties__yang.ext.version>2013.09.07.4-Helium</m:properties__yang.ext.version>
+		<m:dependency.management__virgomirror__org.eclipse.jdt.core.compiler.batch__version>3.8.0.I20120518-2145</m:dependency.management__virgomirror__org.eclipse.jdt.core.compiler.batch__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__scope>test</m:dependency.management__org.ops4j.pax.exam__pax-exam-junit4__scope>
+		<m:properties__slf4j.version>1.7.2</m:properties__slf4j.version>
+		<m:properties__sonar-jacoco-listeners.version>2.4</m:properties__sonar-jacoco-listeners.version>
+		<m:properties__commons.io.version>2.4</m:properties__commons.io.version>
+		<m:dependency.management__org.codehaus.enunciate__enunciate-core-annotations__version>1.28</m:dependency.management__org.codehaus.enunciate__enunciate-core-annotations__version>
+		<m:dependency.management__org.opendaylight.yangtools.model__ietf-topology-isis__version>2013.10.21.2-Helium</m:dependency.management__org.opendaylight.yangtools.model__ietf-topology-isis__version>
+		<m:dependency.management__org.opendaylight.yangtools__restconf-client-api__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__restconf-client-api__version>
+		<m:dependency.management__commons-fileupload__commons-fileupload__version>1.2.2</m:dependency.management__commons-fileupload__commons-fileupload__version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-annotations__version>2.3.2</m:dependency.management__com.fasterxml.jackson.core__jackson-annotations__version>
+		<m:dependency.management__org.codehaus.jettison__jettison__version>1.3.3</m:dependency.management__org.codehaus.jettison__jettison__version>
+		<m:properties__spring-osgi.version>1.2.1</m:properties__spring-osgi.version>
+		<m:dependency.management__org.mockito__mockito-core__scope>test</m:dependency.management__org.mockito__mockito-core__scope>
+		<m:dependency.management__org.osgi__org.osgi.compendium__version>5.0.0</m:dependency.management__org.osgi__org.osgi.compendium__version>
+		<m:dependency.management__org.opendaylight.yangtools__restconf-util__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__restconf-util__version>
+		<m:properties__jar.plugin.version>2.4</m:properties__jar.plugin.version>
+		<m:dependency.management__org.eclipse.persistence__org.eclipse.persistence.antlr__version>2.5.0</m:dependency.management__org.eclipse.persistence__org.eclipse.persistence.antlr__version>
+		<m:dependency.management__org.opendaylight.yangtools__binding-generator-api__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__binding-generator-api__version>
+		<m:dependency.management__org.codehaus.groovy__groovy__version>2.1.6</m:dependency.management__org.codehaus.groovy__groovy__version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-databind__version>2.3.2</m:dependency.management__com.fasterxml.jackson.core__jackson-databind__version>
+		<m:dependency.management__com.github.romix__java-concurrent-hash-trie-map__version>0.2.0</m:dependency.management__com.github.romix__java-concurrent-hash-trie-map__version>
+		<m:properties__maven.antrun.plugin.version>1.3</m:properties__maven.antrun.plugin.version>
+		<m:dependency.management__org.opendaylight.yangtools__bug527-test-model__scope>test</m:dependency.management__org.opendaylight.yangtools__bug527-test-model__scope>
+		<m:dependency.management__org.springframework__org.springframework.web__version>3.1.3.RELEASE</m:dependency.management__org.springframework__org.springframework.web__version>
+		<m:properties__releaseplugin.version>2.3.2</m:properties__releaseplugin.version>
+		<m:dependency.management__geminiweb__org.eclipse.virgo.util.math__version>3.6.0.RELEASE</m:dependency.management__geminiweb__org.eclipse.virgo.util.math__version>
+		<m:dependency.management__org.opendaylight.yangtools.model__opendaylight-l2-types__version>2013.08.27.4-Helium</m:dependency.management__org.opendaylight.yangtools.model__opendaylight-l2-types__version>
+		<m:dependency.management__org.springframework__org.springframework.web.servlet__version>3.1.3.RELEASE</m:dependency.management__org.springframework__org.springframework.web.servlet__version>
+		<m:dependency.management__orbit__javax.servlet.jsp.jstl__version>1.2.0.v201105211821</m:dependency.management__orbit__javax.servlet.jsp.jstl__version>
+		<m:dependency.management__org.mockito__mockito-all__scope>test</m:dependency.management__org.mockito__mockito-all__scope>
+		<m:dependency.management__org.apache.maven.shared__maven-verifier__version>1.5</m:dependency.management__org.apache.maven.shared__maven-verifier__version>
+		<m:properties__javax.annotation.version>1.2</m:properties__javax.annotation.version>
+		<m:dependency.management__org.opendaylight.yangtools.model__ietf-yang-types__version>2010.09.24.4-Helium</m:dependency.management__org.opendaylight.yangtools.model__ietf-yang-types__version>
+		<m:dependency.management__org.codehaus.groovy__groovy__scope>test</m:dependency.management__org.codehaus.groovy__groovy__scope>
+		<m:dependency.management__geminiweb__org.eclipse.virgo.util.parser.manifest__version>3.6.0.RELEASE</m:dependency.management__geminiweb__org.eclipse.virgo.util.parser.manifest__version>
+		<m:dependency.management__org.opendaylight.yangtools__restconf-jaxrs-api__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__restconf-jaxrs-api__version>
+		<m:dependency.management__org.springframework__org.springframework.core__version>3.1.3.RELEASE</m:dependency.management__org.springframework__org.springframework.core__version>
+		<m:dependency.management__com.sun.jersey__jersey-server__version>1.17</m:dependency.management__com.sun.jersey__jersey-server__version>
+		<m:dependency.management__org.opendaylight.yangtools__restconf-test-service__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__restconf-test-service__version>
+		<m:dependency.management__org.jolokia__jolokia-osgi__version>1.1.4</m:dependency.management__org.jolokia__jolokia-osgi__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.fileinstall__version>3.1.6</m:dependency.management__org.apache.felix__org.apache.felix.fileinstall__version>
+		<m:dependency.management__org.osgi__org.osgi.core__version>5.0.0</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:dependency.management__org.sonatype.plexus__plexus-build-api__version>0.0.7</m:dependency.management__org.sonatype.plexus__plexus-build-api__version>
+		<m:properties__netty.version>4.0.23.Final</m:properties__netty.version>
+		<m:dependency.management__org.hamcrest__hamcrest-core__version>1.3</m:dependency.management__org.hamcrest__hamcrest-core__version>
+		<m:dependency.management__orbit__javax.ejb__version>3.1.1.v201204261316</m:dependency.management__orbit__javax.ejb__version>
+		<m:dependency.management__orbit__org.apache.tomcat.api__version>7.0.53.v201406060720</m:dependency.management__orbit__org.apache.tomcat.api__version>
+		<m:dependency.management__org.opendaylight.controller.thirdparty__com.sun.jersey.jersey-servlet__version>1.17</m:dependency.management__org.opendaylight.controller.thirdparty__com.sun.jersey.jersey-servlet__version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-maven-plugin__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-maven-plugin__version>
+		<m:properties__jsr311.v2.api.version>2.0</m:properties__jsr311.v2.api.version>
+		<m:properties__maven.compile.plugin.version>2.5.1</m:properties__maven.compile.plugin.version>
+		<m:dependency.management__com.google.code.findbugs__jsr305__version>2.0.3</m:dependency.management__com.google.code.findbugs__jsr305__version>
+		<m:properties__maven.compiler.source>1.7</m:properties__maven.compiler.source>
+		<m:dependency.management__org.springframework.security__spring-security-core__version>3.1.3.RELEASE</m:dependency.management__org.springframework.security__spring-security-core__version>
+		<m:properties__virgo.version>3.6.0.RELEASE</m:properties__virgo.version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-jaxb-annotations__version>2.3.2</m:dependency.management__com.fasterxml.jackson.module__jackson-module-jaxb-annotations__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-container-native__scope>test</m:dependency.management__org.ops4j.pax.exam__pax-exam-container-native__scope>
+		<m:dependency.management__org.opendaylight.yangtools__yang-data-impl__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-data-impl__version>
+		<m:properties__groovy.version>2.1.6</m:properties__groovy.version>
+		<m:dependency.management__commons-codec__commons-codec__version>1.8</m:dependency.management__commons-codec__commons-codec__version>
+		<m:dependency.management__org.opendaylight.yangtools__object-cache-guava__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__object-cache-guava__version>
+		<m:dependency.management__org.opendaylight.yangtools__binding-model-api__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__binding-model-api__version>
+		<m:properties__txw2.version>20110809</m:properties__txw2.version>
+		<m:properties__feature.transaction.version>1.0.1</m:properties__feature.transaction.version>
+		<m:properties__jaxrs-api.version>3.0.4.Final</m:properties__jaxrs-api.version>
+		<m:properties__junit.version>4.11</m:properties__junit.version>
+		<m:properties__projectinfo>2.6</m:properties__projectinfo>
+		<m:properties__org.json.version>20080701</m:properties__org.json.version>
+		<m:dependency.management__org.osgi__org.osgi.core__scope>provided</m:dependency.management__org.osgi__org.osgi.core__scope>
+		<m:properties__jacoco.version>0.6.2.201302030002</m:properties__jacoco.version>
+		<m:properties__jettison.version>1.3.3</m:properties__jettison.version>
+		<m:properties__exam.version>3.0.0</m:properties__exam.version>
+		<m:dependency.management__org.glassfish.jersey.ext__jersey-proxy-client__version>2.0</m:dependency.management__org.glassfish.jersey.ext__jersey-proxy-client__version>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__version>1.7.2</m:dependency.management__org.slf4j__jcl-over-slf4j__version>
+		<m:dependency.management__org.json__json__version>20080701</m:dependency.management__org.json__json__version>
+		<m:dependency.management__org.springframework.security__spring-security-web__version>3.1.3.RELEASE</m:dependency.management__org.springframework.security__spring-security-web__version>
+		<m:dependency.management__org.opendaylight.yangtools.model__yang-ext__version>2013.09.07.4-Helium</m:dependency.management__org.opendaylight.yangtools.model__yang-ext__version>
+		<m:dependency.management__equinoxSDK381__org.apache.felix.gogo.runtime__version>0.8.0.v201108120515</m:dependency.management__equinoxSDK381__org.apache.felix.gogo.runtime__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-link-mvn__scope>test</m:dependency.management__org.ops4j.pax.exam__pax-exam-link-mvn__scope>
+		<m:dependency.management__orbit__org.apache.catalina.ha__version>7.0.53.v201406070630</m:dependency.management__orbit__org.apache.catalina.ha__version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__xtend.version>2.4.3</m:properties__xtend.version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-model-api__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-model-api__version>
+		<m:dependency.management__equinoxSDK381__org.eclipse.equinox.cm__version>1.0.400.v20120522-1841</m:dependency.management__equinoxSDK381__org.eclipse.equinox.cm__version>
+		<m:dependency.management__org.opendaylight.yangtools__bug1196-test-model__scope>test</m:dependency.management__org.opendaylight.yangtools__bug1196-test-model__scope>
+		<m:dependency.management__org.eclipse.xtend__org.eclipse.xtend.lib__version>2.4.3</m:dependency.management__org.eclipse.xtend__org.eclipse.xtend.lib__version>
+		<m:dependency.management__org.springframework__org.springframework.aop__version>3.1.3.RELEASE</m:dependency.management__org.springframework__org.springframework.aop__version>
+		<m:dependency.management__org.mockito__mockito-core__version>1.9.5</m:dependency.management__org.mockito__mockito-core__version>
+		<m:dependency.management__io.netty__netty-buffer__version>4.0.23.Final</m:dependency.management__io.netty__netty-buffer__version>
+		<m:properties__bundle.plugin.version>2.4.0</m:properties__bundle.plugin.version>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.7.2</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:dependency.management__org.javassist__javassist__version>3.17.1-GA</m:dependency.management__org.javassist__javassist__version>
+		<m:dependency.management__org.opendaylight.yangtools__websocket-client__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__websocket-client__version>
+		<m:dependency.management__org.ow2.asm__asm-all__version>4.1</m:dependency.management__org.ow2.asm__asm-all__version>
+		<m:properties__jsr305.version>2.0.1</m:properties__jsr305.version>
+		<m:dependency.management__org.opendaylight.yangtools__bug527-test-model__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__bug527-test-model__version>
+		<m:properties__corsfilter.version>7.0.42</m:properties__corsfilter.version>
+		<m:properties__checkstyle.version>2.10</m:properties__checkstyle.version>
+		<m:properties__opendaylight.l2.types.version>2013.08.27.4-Helium</m:properties__opendaylight.l2.types.version>
+		<m:dependency.management__org.springframework.osgi__spring-osgi-mock__scope>test</m:dependency.management__org.springframework.osgi__spring-osgi-mock__scope>
+		<m:dependency.management__junit__junit__version>4.11</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.aopalliance__com.springsource.org.aopalliance__version>1.0.0</m:dependency.management__org.aopalliance__com.springsource.org.aopalliance__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-xml__scope>test</m:dependency.management__org.codehaus.groovy__groovy-xml__scope>
+		<m:properties__bouncycastle.version>1.50</m:properties__bouncycastle.version>
+		<m:dependency.management__org.opendaylight.yangtools.model__ietf-topology-l3-unicast-igp__version>2013.10.21.2-Helium</m:dependency.management__org.opendaylight.yangtools.model__ietf-topology-l3-unicast-igp__version>
+		<m:properties__spring-security.version>3.1.3.RELEASE</m:properties__spring-security.version>
+		<m:dependency.management__orbit__javax.el__version>2.2.0.v201108011116</m:dependency.management__orbit__javax.el__version>
+		<m:properties__maven.source.version>2.2.1</m:properties__maven.source.version>
+		<m:properties__ietf.yang.types.20130715.version>2013.07.15.1-Helium</m:properties__ietf.yang.types.20130715.version>
+		<m:properties__ietf.yang.types.version>2010.09.24.4-Helium</m:properties__ietf.yang.types.version>
+		<m:dependency.management__org.opendaylight.yangtools__features-test__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__features-test__version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-data-operations__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-data-operations__version>
+		<m:dependency.management__org.jboss.resteasy__jaxrs-api__version>3.0.4.Final</m:dependency.management__org.jboss.resteasy__jaxrs-api__version>
+		<m:properties__aries.util.version>1.1.0</m:properties__aries.util.version>
+		<m:dependency.management__org.opendaylight.yangtools__util__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__util__version>
+		<m:properties__javassist.version>3.17.1-GA</m:properties__javassist.version>
+		<m:dependency.management__equinoxSDK381__org.eclipse.osgi.services__version>3.3.100.v20120522-1822</m:dependency.management__equinoxSDK381__org.eclipse.osgi.services__version>
+		<m:properties__felix.dependencymanager.version>3.1.0</m:properties__felix.dependencymanager.version>
+		<m:properties__maven.compiler.target>1.7</m:properties__maven.compiler.target>
+		<m:dependency.management__org.codehaus.plexus__plexus-slf4j-logging__version>1.1</m:dependency.management__org.codehaus.plexus__plexus-slf4j-logging__version>
+		<m:maven.plugins>org.eclipse.xtend__xtend-maven-plugin__2.4.3|null__maven-clean-plugin__2.5|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-source-plugin__2.2.1|org.apache.maven.plugins__maven-javadoc-plugin__null|org.jacoco__jacoco-maven-plugin__null|org.eclipse.xtend__xtend-maven-plugin__2.4.3|null__maven-clean-plugin__2.5|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-source-plugin__2.2.1|org.apache.maven.plugins__maven-javadoc-plugin__null|org.jacoco__jacoco-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.opendaylight.yangtools__binding-generator-util__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__binding-generator-util__version>
+		<m:dependency.management__io.netty__netty-transport__version>4.0.23.Final</m:dependency.management__io.netty__netty-transport__version>
+		<m:dependency.management__commons-lang__commons-lang__version>2.6</m:dependency.management__commons-lang__commons-lang__version>
+		<m:dependency.management__org.opendaylight.yangtools__object-cache-noop__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__object-cache-noop__version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-parser-impl__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-parser-impl__version>
+		<m:properties__gson.version>2.2.4</m:properties__gson.version>
+		<m:properties__jersey.version>1.17</m:properties__jersey.version>
+		<m:dependency.management__xmlunit__xmlunit__version>1.5</m:dependency.management__xmlunit__xmlunit__version>
+		<m:dependency.management__javax.ws.rs__javax.ws.rs-api__version>2.0</m:dependency.management__javax.ws.rs__javax.ws.rs-api__version>
+		<m:dependency.management__com.sun.xml.txw2__txw2__version>20110809</m:dependency.management__com.sun.xml.txw2__txw2__version>
+		<m:dependency.management__com.sun.jersey__jersey-core__version>1.17</m:dependency.management__com.sun.jersey__jersey-core__version>
+		<m:dependency.management__org.opendaylight.yangtools.thirdparty__antlr4-runtime-osgi-nohead__version>4.0</m:dependency.management__org.opendaylight.yangtools.thirdparty__antlr4-runtime-osgi-nohead__version>
+		<m:dependency.management__orbit__javax.activation__version>1.1.0.v201211130549</m:dependency.management__orbit__javax.activation__version>
+		<m:properties__enunciate.version>1.28</m:properties__enunciate.version>
+		<m:properties__sonar.profile>Sonar way with Findbugs</m:properties__sonar.profile>
+		<m:properties__antlr4.version>4.0</m:properties__antlr4.version>
+		<m:properties__felix.webconsole.version>4.2.0</m:properties__felix.webconsole.version>
+		<m:properties__osgi.core.version>5.0.0</m:properties__osgi.core.version>
+		<m:dependency.management__org.opendaylight.yangtools.thirdparty__xtend-lib-osgi__version>2.4.3</m:dependency.management__org.opendaylight.yangtools.thirdparty__xtend-lib-osgi__version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-parser-api__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-parser-api__version>
+		<m:dependency.management__org.opendaylight.yangtools.model__ietf-topology-ospf__version>2013.10.21.2-Helium</m:dependency.management__org.opendaylight.yangtools.model__ietf-topology-ospf__version>
+		<m:dependency.management__geminiweb__org.eclipse.gemini.web.extender__version>2.2.0.RELEASE</m:dependency.management__geminiweb__org.eclipse.gemini.web.extender__version>
+		<m:dependency.management__equinoxSDK381__org.eclipse.equinox.console__version>1.0.0.v20120522-1841</m:dependency.management__equinoxSDK381__org.eclipse.equinox.console__version>
+		<m:dependency.management__org.springframework__org.springframework.transaction__version>3.1.3.RELEASE</m:dependency.management__org.springframework__org.springframework.transaction__version>
+		<m:properties__commons.codec.version>1.8</m:properties__commons.codec.version>
+		<m:properties__nexusproxy>http://nexus.opendaylight.org/content</m:properties__nexusproxy>
+		<m:properties__java.version.source>1.7</m:properties__java.version.source>
+		<m:properties__maven.clean.plugin.version>2.5</m:properties__maven.clean.plugin.version>
+		<m:dependency.management__org.ow2.chameleon.management__chameleon-mbeans__version>1.0.0</m:dependency.management__org.ow2.chameleon.management__chameleon-mbeans__version>
+		<m:dependency.management__org.opendaylight.yangtools.model__ietf-inet-types__version>2010.09.24.4-Helium</m:dependency.management__org.opendaylight.yangtools.model__ietf-inet-types__version>
+		<m:properties__siteplugin>3.2</m:properties__siteplugin>
+		<m:properties__spring-security-karaf.version>3.1.4.RELEASE</m:properties__spring-security-karaf.version>
+		<m:dependency.management__orbit__org.apache.catalina__version>7.0.53.v201406061610</m:dependency.management__orbit__org.apache.catalina__version>
+		<m:dependency.management__equinoxSDK381__org.eclipse.osgi__version>3.8.1.v20120830-144521</m:dependency.management__equinoxSDK381__org.eclipse.osgi__version>
+		<m:dependency.management__org.opendaylight.yangtools__binding-type-provider__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__binding-type-provider__version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-data-util__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-data-util__version>
+		<m:dependency.management__equinoxSDK381__org.eclipse.equinox.launcher__version>1.3.0.v20120522-1813</m:dependency.management__equinoxSDK381__org.eclipse.equinox.launcher__version>
+		<m:properties__yangtools.version>0.6.2-Helium</m:properties__yangtools.version>
+		<m:properties__jsr311.api.version>1.1.1</m:properties__jsr311.api.version>
+		<m:dependency.management__org.apache.maven__maven-core__version>3.0.5</m:dependency.management__org.apache.maven__maven-core__version>
+		<m:dependency.management__org.opendaylight.yangtools__maven-sal-api-gen-plugin__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__maven-sal-api-gen-plugin__version>
+		<m:dependency.management__org.opendaylight.yangtools__restconf-common__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__restconf-common__version>
+		<m:properties__hamcrest.version>1.3</m:properties__hamcrest.version>
+		<m:dependency.management__equinoxSDK381__javax.servlet.jsp__version>2.2.0.v201112011158</m:dependency.management__equinoxSDK381__javax.servlet.jsp__version>
+		<m:dependency.management__org.apache.maven__maven-plugin-api__version>3.0.5</m:dependency.management__org.apache.maven__maven-plugin-api__version>
+		<m:dependency.management__io.netty__netty-codec-http__version>4.0.23.Final</m:dependency.management__io.netty__netty-codec-http__version>
+		<m:dependency.management__xml-apis__xml-apis__version>2.0.2</m:dependency.management__xml-apis__xml-apis__version>
+		<m:dependency.management__org.opendaylight.yangtools__bug1196-test-model__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__bug1196-test-model__version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-core__version>2.3.2</m:dependency.management__com.fasterxml.jackson.core__jackson-core__version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-model-util__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-model-util__version>
+		<m:dependency.management__org.opendaylight.yangtools.model__ietf-yang-types-20130715__version>2013.07.15.1-Helium</m:dependency.management__org.opendaylight.yangtools.model__ietf-yang-types-20130715__version>
+		<m:properties__jsr305.api.version>2.0.3</m:properties__jsr305.api.version>
+		<m:properties__maven.bundle.version>2.4.0</m:properties__maven.bundle.version>
+		<m:dependency.management__org.opendaylight.yangtools.model__ietf-restconf__version>2013.10.19.1-Helium</m:dependency.management__org.opendaylight.yangtools.model__ietf-restconf__version>
+		<m:properties__jolokia.version>1.1.4</m:properties__jolokia.version>
+		<m:properties__jersey-servlet.version>1.17</m:properties__jersey-servlet.version>
+		<m:dependency.management__org.opendaylight.yangtools__binding-java-api-generator__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__binding-java-api-generator__version>
+		<m:dependency.management__orbit__org.apache.el__version>7.0.53.v201406060720</m:dependency.management__orbit__org.apache.el__version>
+		<m:dependency.management__org.opendaylight.yangtools__concepts__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__concepts__version>
+		<m:dependency.management__commons-net__commons-net__version>3.0.1</m:dependency.management__commons-net__commons-net__version>
+		<m:dependency.management__commons-io__commons-io__version>2.4</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__org.ops4j.pax.exam__pax-exam-link-mvn__version>3.0.0</m:dependency.management__org.ops4j.pax.exam__pax-exam-link-mvn__version>
+		<m:dependency.management__io.netty__netty-handler__version>4.0.23.Final</m:dependency.management__io.netty__netty-handler__version>
+		<m:properties__jackson.version>2.3.2</m:properties__jackson.version>
+		<m:properties__nexus.repository.snapshot>opendaylight.snapshot</m:properties__nexus.repository.snapshot>
+		<m:dependency.management__org.slf4j__log4j-over-slf4j__version>1.7.2</m:dependency.management__org.slf4j__log4j-over-slf4j__version>
+		<m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-base__version>2.3.2</m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-base__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.webconsole__version>4.2.0</m:dependency.management__org.apache.felix__org.apache.felix.webconsole__version>
+		<m:dependency.management__org.opendaylight.yangtools__binding-data-codec__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__binding-data-codec__version>
+		<m:dependency.management__orbit__org.apache.jasper__version>7.0.53.v201406070630</m:dependency.management__orbit__org.apache.jasper__version>
+		<m:dependency.management__com.sun.jersey__jersey-client__version>1.17</m:dependency.management__com.sun.jersey__jersey-client__version>
+		<m:properties__guava.version>14.0.1</m:properties__guava.version>
+		<m:dependency.management__org.springframework.security__spring-security-taglibs__version>3.1.3.RELEASE</m:dependency.management__org.springframework.security__spring-security-taglibs__version>
+		<m:dependency.management__org.ops4j.pax.url__pax-url-aether__version>1.5.0</m:dependency.management__org.ops4j.pax.url__pax-url-aether__version>
+		<m:properties__jersey2.publisher.version>4.0</m:properties__jersey2.publisher.version>
+		<m:properties__jersey.server.version>1.17</m:properties__jersey.server.version>
+		<m:properties__aopalliance.version>1.0.0</m:properties__aopalliance.version>
+		<m:dependency.management__geminiweb__org.eclipse.virgo.util.io__version>3.6.0.RELEASE</m:dependency.management__geminiweb__org.eclipse.virgo.util.io__version>
+		<m:dependency.management__geminiweb__org.eclipse.virgo.kernel.equinox.extensions__version>3.6.0.RELEASE</m:dependency.management__geminiweb__org.eclipse.virgo.kernel.equinox.extensions__version>
+		<m:dependency.management__org.opendaylight.yangtools.model__ietf-topology__version>2013.10.21.2-Helium</m:dependency.management__org.opendaylight.yangtools.model__ietf-topology__version>
+		<m:dependency.management__org.opendaylight.yangtools__object-cache-api__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__object-cache-api__version>
+		<m:dependency.management__org.springframework__org.springframework.asm__version>3.1.3.RELEASE</m:dependency.management__org.springframework__org.springframework.asm__version>
+		<m:dependency.management__org.opendaylight.yangtools__binding-generator-spi__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__binding-generator-spi__version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:dependency.management__org.opendaylight.yangtools__restconf-client-impl__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__restconf-client-impl__version>
+		<m:dependency.management__equinoxSDK381__javax.servlet__version>3.0.0.v201112011016</m:dependency.management__equinoxSDK381__javax.servlet__version>
+		<m:properties__spifly.version>1.0.0</m:properties__spifly.version>
+		<m:dependency.management__equinoxSDK381__org.apache.felix.gogo.command__version>0.8.0.v201108120515</m:dependency.management__equinoxSDK381__org.apache.felix.gogo.command__version>
+		<m:dependency.management__org.springframework__org.springframework.context__version>3.1.3.RELEASE</m:dependency.management__org.springframework__org.springframework.context__version>
+		<m:dependency.management__eclipselink__javax.persistence__version>2.0.4.v201112161009</m:dependency.management__eclipselink__javax.persistence__version>
+		<m:dependency.management__geminiweb__org.eclipse.virgo.util.osgi.manifest__version>3.6.0.RELEASE</m:dependency.management__geminiweb__org.eclipse.virgo.util.osgi.manifest__version>
+		<m:dependency.management__org.opendaylight.yangtools__yang-data-composite-node__version>0.6.2-Helium</m:dependency.management__org.opendaylight.yangtools__yang-data-composite-node__version>
+		<m:dependency.management__org.jboss.spec.javax.transaction__jboss-transaction-api_1.1_spec__version>1.0.1.Final</m:dependency.management__org.jboss.spec.javax.transaction__jboss-transaction-api_1.1_spec__version>
+		<m:dependency.management__geminiweb__org.eclipse.virgo.util.osgi__version>3.6.0.RELEASE</m:dependency.management__geminiweb__org.eclipse.virgo.util.osgi__version>
+		<m:properties__geminiweb.version>2.2.0.RELEASE</m:properties__geminiweb.version>
+		<m:dependency.management__org.springframework__org.springframework.expression__version>3.1.3.RELEASE</m:dependency.management__org.springframework__org.springframework.expression__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="object-cache-api" type="bundle" ext="jar" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.opendaylight.yangtools" name="concepts" rev="0.6.2-Helium" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="com.google.guava" name="guava" rev="14.0.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="com.google.code.findbugs" name="jsr305" rev="2.0.3" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="4.11" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.codehaus.sonar-plugins.java" name="sonar-jacoco-listeners" rev="2.4" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.slf4j" name="slf4j-simple" rev="1.7.2" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="orbit" module="javax.servlet.jsp.jstl.impl" matcher="exact" rev="1.2.0.v201210211230"/>
+		<override org="org.opendaylight.yangtools" module="yang-data-util" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="14.0.1"/>
+		<override org="org.ops4j.pax.exam" module="pax-exam-container-native" matcher="exact" rev="3.0.0"/>
+		<override org="org.opendaylight.yangtools" module="object-cache-noop" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="io.netty" module="netty-common" matcher="exact" rev="4.0.23.Final"/>
+		<override org="org.springframework" module="org.springframework.web.servlet" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.springframework" module="org.springframework.context.support" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.springframework" module="org.springframework.expression" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.osgi" module="org.osgi.core" matcher="exact" rev="5.0.0"/>
+		<override org="javax.ws.rs" module="jsr311-api" matcher="exact" rev="1.1.1"/>
+		<override org="org.opendaylight.yangtools.model" module="ietf-topology-isis" matcher="exact" rev="2013.10.21.2-Helium"/>
+		<override org="equinoxSDK381" module="org.eclipse.equinox.cm" matcher="exact" rev="1.0.400.v20120522-1841"/>
+		<override org="org.opendaylight.yangtools.model" module="ietf-ted" matcher="exact" rev="2013.10.21.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="binding-generator-impl" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="yang-common" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="orbit" module="org.apache.tomcat.api" matcher="exact" rev="7.0.53.v201406060720"/>
+		<override org="eclipselink" module="javax.persistence" matcher="exact" rev="2.0.4.v201112161009"/>
+		<override org="equinoxSDK381" module="org.apache.felix.gogo.shell" matcher="exact" rev="0.8.0.v201110170705"/>
+		<override org="orbit" module="javax.ejb" matcher="exact" rev="3.1.1.v201204261316"/>
+		<override org="org.osgi" module="org.osgi.compendium" matcher="exact" rev="5.0.0"/>
+		<override org="orbit" module="org.apache.catalina.tribes" matcher="exact" rev="7.0.53.v201406070630"/>
+		<override org="org.opendaylight.yangtools.model" module="ietf-topology-l3-unicast-igp" matcher="exact" rev="2013.10.21.2-Helium"/>
+		<override org="orbit" module="javax.xml.rpc" matcher="exact" rev="1.1.0.v201005080400"/>
+		<override org="org.opendaylight.yangtools" module="yang-data-impl" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="util" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="yang-parser-api" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="xml-apis" module="xml-apis" matcher="exact" rev="2.0.2"/>
+		<override org="org.codehaus.plexus" module="plexus-slf4j-logging" matcher="exact" rev="1.1"/>
+		<override org="geminiweb" module="org.eclipse.virgo.util.parser.manifest" matcher="exact" rev="3.6.0.RELEASE"/>
+		<override org="com.fasterxml.jackson.jaxrs" module="jackson-jaxrs-base" matcher="exact" rev="2.3.2"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-core" matcher="exact" rev="2.3.2"/>
+		<override org="org.springframework" module="org.springframework.asm" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="geminiweb" module="org.eclipse.gemini.web.core" matcher="exact" rev="2.2.0.RELEASE"/>
+		<override org="org.opendaylight.yangtools" module="concepts" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.springframework.security" module="spring-security-taglibs" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.ops4j.pax.exam" module="pax-exam-junit4" matcher="exact" rev="3.0.0"/>
+		<override org="org.codehaus.groovy" module="groovy" matcher="exact" rev="2.1.6"/>
+		<override org="org.opendaylight.controller.thirdparty" module="com.sun.jersey.jersey-servlet" matcher="exact" rev="1.17"/>
+		<override org="org.apache.felix" module="org.apache.felix.dependencymanager" matcher="exact" rev="3.1.0"/>
+		<override org="org.opendaylight.yangtools" module="yang-data-composite-node" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="com.google.code.gson" module="gson" matcher="exact" rev="2.2.4"/>
+		<override org="commons-lang" module="commons-lang" matcher="exact" rev="2.6"/>
+		<override org="com.google.code.findbugs" module="jsr305" matcher="exact" rev="2.0.3"/>
+		<override org="orbit" module="javax.activation" matcher="exact" rev="1.1.0.v201211130549"/>
+		<override org="org.opendaylight.yangtools.model" module="ietf-yang-types-20130715" matcher="exact" rev="2013.07.15.1-Helium"/>
+		<override org="equinoxSDK381" module="javax.servlet" matcher="exact" rev="3.0.0.v201112011016"/>
+		<override org="org.springframework" module="org.springframework.transaction" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.opendaylight.yangtools" module="binding-java-api-generator" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="restconf-jaxrs-api" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.springframework.security" module="spring-security-web" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="orbit" module="org.apache.el" matcher="exact" rev="7.0.53.v201406060720"/>
+		<override org="commons-codec" module="commons-codec" matcher="exact" rev="1.8"/>
+		<override org="org.hamcrest" module="hamcrest-core" matcher="exact" rev="1.3"/>
+		<override org="org.opendaylight.yangtools" module="binding-generator-api" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.glassfish.jersey.core" module="jersey-client" matcher="exact" rev="2.0"/>
+		<override org="geminiweb" module="org.eclipse.virgo.util.io" matcher="exact" rev="3.6.0.RELEASE"/>
+		<override org="org.apache.felix" module="org.apache.felix.dependencymanager.shell" matcher="exact" rev="3.0.1"/>
+		<override org="com.sun.xml.txw2" module="txw2" matcher="exact" rev="20110809"/>
+		<override org="org.opendaylight.yangtools" module="binding-generator-util" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="yang-binding" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="websocket-client" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="orbit" module="org.apache.tomcat.util" matcher="exact" rev="7.0.53.v201406070630"/>
+		<override org="com.sun.jersey" module="jersey-core" matcher="exact" rev="1.17"/>
+		<override org="equinoxSDK381" module="org.eclipse.equinox.ds" matcher="exact" rev="1.4.0.v20120522-1841"/>
+		<override org="org.jboss.spec.javax.transaction" module="jboss-transaction-api_1.1_spec" matcher="exact" rev="1.0.1.Final"/>
+		<override org="org.opendaylight.yangtools.thirdparty" module="xtend-lib-osgi" matcher="exact" rev="2.4.3"/>
+		<override org="io.netty" module="netty-handler" matcher="exact" rev="4.0.23.Final"/>
+		<override org="org.apache.maven" module="maven-core" matcher="exact" rev="3.0.5"/>
+		<override org="orbit" module="org.apache.coyote" matcher="exact" rev="7.0.53.v201406070630"/>
+		<override org="org.opendaylight.yangtools.model" module="ietf-topology" matcher="exact" rev="2013.10.21.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="features-test" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.codehaus.jettison" module="jettison" matcher="exact" rev="1.3.3"/>
+		<override org="com.sun.jersey" module="jersey-client" matcher="exact" rev="1.17"/>
+		<override org="org.glassfish.jersey.ext" module="jersey-proxy-client" matcher="exact" rev="2.0"/>
+		<override org="eclipselink" module="javax.resource" matcher="exact" rev="1.5.0.v200906010428"/>
+		<override org="org.ops4j.pax.url" module="pax-url-aether" matcher="exact" rev="1.5.0"/>
+		<override org="org.mockito" module="mockito-core" matcher="exact" rev="1.9.5"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.2"/>
+		<override org="ch.qos.logback" module="logback-core" matcher="exact" rev="1.0.9"/>
+		<override org="org.opendaylight.yangtools" module="maven-sal-api-gen-plugin" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="yang-data-operations" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="orbit" module="org.apache.catalina.ha" matcher="exact" rev="7.0.53.v201406070630"/>
+		<override org="org.ow2.asm" module="asm-all" matcher="exact" rev="4.1"/>
+		<override org="geminiweb" module="org.eclipse.gemini.web.tomcat" matcher="exact" rev="2.2.0.RELEASE"/>
+		<override org="org.codehaus.groovy" module="groovy-xml" matcher="exact" rev="2.1.6"/>
+		<override org="org.slf4j" module="jcl-over-slf4j" matcher="exact" rev="1.7.2"/>
+		<override org="org.eclipse.persistence" module="org.eclipse.persistence.core" matcher="exact" rev="2.5.0"/>
+		<override org="javax.ws.rs" module="javax.ws.rs-api" matcher="exact" rev="2.0"/>
+		<override org="equinoxSDK381" module="javax.servlet.jsp" matcher="exact" rev="2.2.0.v201112011158"/>
+		<override org="orbit" module="org.apache.jasper" matcher="exact" rev="7.0.53.v201406070630"/>
+		<override org="org.ops4j.pax.exam" module="pax-exam-link-mvn" matcher="exact" rev="3.0.0"/>
+		<override org="org.opendaylight.yangtools" module="restconf-client-impl" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.apache.maven.shared" module="maven-verifier" matcher="exact" rev="1.5"/>
+		<override org="org.opendaylight.yangtools.model" module="ietf-topology-l3-unicast" matcher="exact" rev="2013.10.21.2-Helium"/>
+		<override org="equinoxSDK381" module="org.eclipse.equinox.launcher" matcher="exact" rev="1.3.0.v20120522-1813"/>
+		<override org="org.bouncycastle" module="bcpkix-jdk15on" matcher="exact" rev="1.50"/>
+		<override org="org.opendaylight.yangtools.model" module="ietf-restconf" matcher="exact" rev="2013.10.19.1-Helium"/>
+		<override org="org.springframework" module="org.springframework.web" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="orbit" module="org.apache.juli.extras" matcher="exact" rev="7.0.53.v201406060720"/>
+		<override org="org.mockito" module="mockito-all" matcher="exact" rev="1.9.5"/>
+		<override org="org.opendaylight.yangtools.model" module="yang-ext" matcher="exact" rev="2013.09.07.4-Helium"/>
+		<override org="org.opendaylight.yangtools" module="restconf-test-service" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="com.fasterxml.jackson.module" module="jackson-module-jaxb-annotations" matcher="exact" rev="2.3.2"/>
+		<override org="ch.qos.logback" module="logback-classic" matcher="exact" rev="1.0.9"/>
+		<override org="orbit" module="org.apache.catalina" matcher="exact" rev="7.0.53.v201406061610"/>
+		<override org="org.springframework.osgi" module="spring-osgi-mock" matcher="exact" rev="1.2.1"/>
+		<override org="org.springframework.security" module="spring-security-config" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.opendaylight.yangtools.model" module="opendaylight-l2-types" matcher="exact" rev="2013.08.27.4-Helium"/>
+		<override org="org.opendaylight.yangtools" module="bug527-test-model" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="yang-data-api" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="com.github.romix" module="java-concurrent-hash-trie-map" matcher="exact" rev="0.2.0"/>
+		<override org="org.apache.felix" module="org.apache.felix.webconsole" matcher="exact" rev="4.2.0"/>
+		<override org="geminiweb" module="org.eclipse.virgo.util.math" matcher="exact" rev="3.6.0.RELEASE"/>
+		<override org="io.netty" module="netty-transport" matcher="exact" rev="4.0.23.Final"/>
+		<override org="org.opendaylight.yangtools" module="binding-data-codec" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.aopalliance" module="com.springsource.org.aopalliance" matcher="exact" rev="1.0.0"/>
+		<override org="org.eclipse.equinox.http" module="servlet" matcher="exact" rev="1.0.0-v20070606"/>
+		<override org="org.opendaylight.yangtools.model" module="ietf-yang-types" matcher="exact" rev="2010.09.24.4-Helium"/>
+		<override org="orbit" module="javax.mail.glassfish" matcher="exact" rev="1.4.1.v201108011116"/>
+		<override org="org.springframework" module="org.springframework.aop" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="equinoxSDK381" module="org.apache.felix.gogo.runtime" matcher="exact" rev="0.8.0.v201108120515"/>
+		<override org="org.opendaylight.yangtools" module="object-cache-api" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="restconf-client-api" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="io.netty" module="netty-codec" matcher="exact" rev="4.0.23.Final"/>
+		<override org="com.sun.jersey" module="jersey-server" matcher="exact" rev="1.17"/>
+		<override org="org.eclipse.xtend" module="org.eclipse.xtend.lib" matcher="exact" rev="2.4.3"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-databind" matcher="exact" rev="2.3.2"/>
+		<override org="org.opendaylight.yangtools" module="yang-model-api" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="com.fasterxml.jackson.jaxrs" module="jackson-jaxrs-json-provider" matcher="exact" rev="2.3.2"/>
+		<override org="geminiweb" module="org.eclipse.virgo.kernel.equinox.extensions" matcher="exact" rev="3.6.0.RELEASE"/>
+		<override org="equinoxSDK381" module="org.eclipse.equinox.console" matcher="exact" rev="1.0.0.v20120522-1841"/>
+		<override org="orbit" module="javax.el" matcher="exact" rev="2.2.0.v201108011116"/>
+		<override org="geminiweb" module="org.eclipse.virgo.util.osgi.manifest" matcher="exact" rev="3.6.0.RELEASE"/>
+		<override org="io.netty" module="netty-buffer" matcher="exact" rev="4.0.23.Final"/>
+		<override org="org.apache.commons" module="commons-lang3" matcher="exact" rev="3.1"/>
+		<override org="org.slf4j" module="slf4j-log4j12" matcher="exact" rev="1.7.2"/>
+		<override org="geminiweb" module="org.eclipse.virgo.util.common" matcher="exact" rev="3.6.0.RELEASE"/>
+		<override org="org.json" module="json" matcher="exact" rev="20080701"/>
+		<override org="geminiweb" module="org.eclipse.gemini.web.extender" matcher="exact" rev="2.2.0.RELEASE"/>
+		<override org="org.opendaylight.yangtools" module="object-cache-guava" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="io.netty" module="netty-codec-http" matcher="exact" rev="4.0.23.Final"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.11"/>
+		<override org="org.opendaylight.yangtools" module="restconf-common" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="yang-maven-plugin-spi" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.opendaylight.yangtools.model" module="ietf-inet-types" matcher="exact" rev="2010.09.24.4-Helium"/>
+		<override org="org.sonatype.plexus" module="plexus-build-api" matcher="exact" rev="0.0.7"/>
+		<override org="org.opendaylight.yangtools" module="binding-generator-spi" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.apache.maven" module="maven-plugin-api" matcher="exact" rev="3.0.5"/>
+		<override org="com.fasterxml.jackson.datatype" module="jackson-datatype-json-org" matcher="exact" rev="2.3.2"/>
+		<override org="xmlunit" module="xmlunit" matcher="exact" rev="1.5"/>
+		<override org="org.opendaylight.yangtools.thirdparty" module="antlr4-runtime-osgi-nohead" matcher="exact" rev="4.0"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-annotations" matcher="exact" rev="2.3.2"/>
+		<override org="equinoxSDK381" module="org.apache.felix.gogo.command" matcher="exact" rev="0.8.0.v201108120515"/>
+		<override org="org.opendaylight.yangtools" module="yang-parser-impl" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="equinoxSDK381" module="org.eclipse.osgi.services" matcher="exact" rev="3.3.100.v20120522-1822"/>
+		<override org="org.eclipse.persistence" module="org.eclipse.persistence.antlr" matcher="exact" rev="2.5.0"/>
+		<override org="org.apache.felix" module="org.apache.felix.fileinstall" matcher="exact" rev="3.1.6"/>
+		<override org="org.opendaylight.yangtools" module="binding-type-provider" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.opendaylight.yangtools" module="yang-model-util" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.jolokia" module="jolokia-osgi" matcher="exact" rev="1.1.4"/>
+		<override org="equinoxSDK381" module="org.eclipse.osgi" matcher="exact" rev="3.8.1.v20120830-144521"/>
+		<override org="org.javassist" module="javassist" matcher="exact" rev="3.17.1-GA"/>
+		<override org="org.bouncycastle" module="bcprov-jdk15on" matcher="exact" rev="1.50"/>
+		<override org="org.opendaylight.yangtools" module="yang-data-codec-gson" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.springframework.security" module="spring-security-core" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.slf4j" module="slf4j-simple" matcher="exact" rev="1.7.2"/>
+		<override org="orbit" module="javax.servlet.jsp.jstl" matcher="exact" rev="1.2.0.v201105211821"/>
+		<override org="geminiweb" module="org.eclipse.virgo.util.osgi" matcher="exact" rev="3.6.0.RELEASE"/>
+		<override org="org.opendaylight.yangtools" module="restconf-util" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="org.codehaus.enunciate" module="enunciate-core-annotations" matcher="exact" rev="1.28"/>
+		<override org="org.opendaylight.yangtools.model" module="ietf-topology-ospf" matcher="exact" rev="2013.10.21.2-Helium"/>
+		<override org="equinoxSDK381" module="org.eclipse.equinox.util" matcher="exact" rev="1.0.400.v20120522-2049"/>
+		<override org="commons-io" module="commons-io" matcher="exact" rev="2.4"/>
+		<override org="org.slf4j" module="log4j-over-slf4j" matcher="exact" rev="1.7.2"/>
+		<override org="org.eclipse.persistence" module="org.eclipse.persistence.moxy" matcher="exact" rev="2.5.0"/>
+		<override org="org.springframework" module="org.springframework.context" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="commons-net" module="commons-net" matcher="exact" rev="3.0.1"/>
+		<override org="org.jboss.resteasy" module="jaxrs-api" matcher="exact" rev="3.0.4.Final"/>
+		<override org="org.springframework" module="org.springframework.beans" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="virgomirror" module="org.eclipse.jdt.core.compiler.batch" matcher="exact" rev="3.8.0.I20120518-2145"/>
+		<override org="org.opendaylight.yangtools" module="binding-model-api" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="orbit" module="javax.annotation" matcher="exact" rev="1.1.0.v201209060031"/>
+		<override org="org.opendaylight.yangtools" module="bug1196-test-model" matcher="exact" rev="0.6.2-Helium"/>
+		<override org="commons-fileupload" module="commons-fileupload" matcher="exact" rev="1.2.2"/>
+		<override org="org.springframework" module="org.springframework.core" matcher="exact" rev="3.1.3.RELEASE"/>
+		<override org="org.ow2.chameleon.management" module="chameleon-mbeans" matcher="exact" rev="1.0.0"/>
+		<override org="org.opendaylight.yangtools" module="yang-maven-plugin" matcher="exact" rev="0.6.2-Helium"/>
+	</dependencies>
+</ivy-module>
