@@ -18,3 +18,5 @@ git clone https://github.com/JSpaceTeam/sbt-repo.git
  - Run sbt-init.sh to setup wording directory.
  - Under js-easy-rest directory run sbt.
  - After enter sbt, run gen-idea to create IDEA project configuration.
+
+ If there is something wrong, please delete ivy/net.juniper folder and update sbt again.
