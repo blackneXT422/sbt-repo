@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-	<info organisation="net.juniper"
-		module="jspace-common-library"
-		revision="0.1.1"
+	<info organisation="org.apache.httpcomponents"
+		module="project"
+		revision="4.1.1"
 		status="release"
-		publication="20150123005643"
+		publication="20101113213241"
 	>
-		<description homepage="" />
+		<description homepage="http://hc.apache.org/">
+		Components to build HTTP enabled services
+		</description>
+		<m:maven.plugins>null__maven-compiler-plugin__null|null__maven-jar-plugin__null|org.apache.maven.plugins__maven-site-plugin__null</m:maven.plugins>
 	</info>
 	<configurations>
 		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
@@ -21,10 +24,5 @@
 		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
 	</configurations>
 	<publications>
-		<artifact name="jspace-common-library" type="jar" ext="jar" conf="master"/>
 	</publications>
-	<dependencies>
-		<dependency org="log4j" name="log4j" rev="1.2.16" force="true" conf="runtime->compile(*),runtime(*),master(*)"/>
-		<dependency org="mysql" name="mysql-connector-java" rev="5.1.34" force="true" conf="runtime->compile(*),runtime(*),master(*)"/>
-	</dependencies>
 </ivy-module>
