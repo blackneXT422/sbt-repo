@@ -20,6 +20,18 @@
             <groupId>io.spray</groupId>
             <artifactId>spray-can_2.11</artifactId>
             <version>1.3.2</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>io.spray</groupId>
+            <artifactId>spray-can_2.11</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.spray</groupId>
+            <artifactId>spray-routing_2.11</artifactId>
+            <version>1.3.2</version>
+            <classifier>sources</classifier>
         </dependency>
         <dependency>
             <groupId>io.spray</groupId>
@@ -30,11 +42,29 @@
             <groupId>io.spray</groupId>
             <artifactId>spray-client_2.11</artifactId>
             <version>1.3.2</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>io.spray</groupId>
+            <artifactId>spray-client_2.11</artifactId>
+            <version>1.3.2</version>
         </dependency>
         <dependency>
             <groupId>io.spray</groupId>
             <artifactId>spray-json_2.11</artifactId>
             <version>1.2.6</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>io.spray</groupId>
+            <artifactId>spray-json_2.11</artifactId>
+            <version>1.2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>io.spray</groupId>
+            <artifactId>spray-testkit_2.11</artifactId>
+            <version>1.3.2</version>
+            <classifier>sources</classifier>
         </dependency>
         <dependency>
             <groupId>io.spray</groupId>
@@ -46,6 +76,18 @@
             <groupId>com.typesafe.akka</groupId>
             <artifactId>akka-actor_2.11</artifactId>
             <version>2.3.7</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-actor_2.11</artifactId>
+            <version>2.3.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-testkit_2.11</artifactId>
+            <version>2.3.7</version>
+            <classifier>sources</classifier>
         </dependency>
         <dependency>
             <groupId>com.typesafe.akka</groupId>
@@ -57,6 +99,18 @@
             <groupId>org.specs2</groupId>
             <artifactId>specs2-core_2.11</artifactId>
             <version>2.3.11</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.specs2</groupId>
+            <artifactId>specs2-core_2.11</artifactId>
+            <version>2.3.11</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.4</version>
+            <classifier>sources</classifier>
         </dependency>
         <dependency>
             <groupId>commons-lang</groupId>
@@ -67,11 +121,29 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.1.2</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.2</version>
         </dependency>
         <dependency>
             <groupId>net.juniper</groupId>
             <artifactId>jnc-library</artifactId>
             <version>0.1.2</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>net.juniper</groupId>
+            <artifactId>jnc-library</artifactId>
+            <version>0.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.scala-logging</groupId>
+            <artifactId>scala-logging_2.11</artifactId>
+            <version>3.1.0</version>
+            <classifier>sources</classifier>
         </dependency>
         <dependency>
             <groupId>com.typesafe.scala-logging</groupId>

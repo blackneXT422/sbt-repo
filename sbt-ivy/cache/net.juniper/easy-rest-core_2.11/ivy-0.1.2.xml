@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
 	<info organisation="net.juniper"
 		module="easy-rest-core_2.11"
 		revision="0.1.2"
 		status="release"
-		publication="20150122170537"
+		publication="20150126021454"
 	>
 		<description homepage="">
 		easy-rest-core
 		</description>
+		<e:sbtTransformHash>7174be3135c2a95a21c158fb6beb5a9621b5b898</e:sbtTransformHash>
 	</info>
 	<configurations>
 		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
@@ -27,18 +28,54 @@
 	</publications>
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.4" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="io.spray" name="spray-can_2.11" rev="1.3.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="io.spray" name="spray-routing_2.11" rev="1.3.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="io.spray" name="spray-client_2.11" rev="1.3.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="io.spray" name="spray-json_2.11" rev="1.2.6" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="io.spray" name="spray-testkit_2.11" rev="1.3.2" force="true" conf="test->runtime(*),master(*)"/>
-		<dependency org="com.typesafe.akka" name="akka-actor_2.11" rev="2.3.7" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="com.typesafe.akka" name="akka-testkit_2.11" rev="2.3.7" force="true" conf="test->runtime(*),master(*)"/>
-		<dependency org="org.specs2" name="specs2-core_2.11" rev="2.3.11" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="commons-lang" name="commons-lang" rev="2.4" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="ch.qos.logback" name="logback-classic" rev="1.1.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="net.juniper" name="jnc-library" rev="0.1.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="com.typesafe.scala-logging" name="scala-logging_2.11" rev="3.1.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="io.spray" name="spray-can_2.11" rev="1.3.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<artifact name="spray-can_2.11" type="jar" ext="jar" conf="compile,runtime" m:classifier="sources"/>
+			<artifact name="spray-can_2.11" type="jar" ext="jar" conf="compile,runtime"/>
+		</dependency>
+		<dependency org="io.spray" name="spray-routing_2.11" rev="1.3.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<artifact name="spray-routing_2.11" type="jar" ext="jar" conf="compile,runtime" m:classifier="sources"/>
+			<artifact name="spray-routing_2.11" type="jar" ext="jar" conf="compile,runtime"/>
+		</dependency>
+		<dependency org="io.spray" name="spray-client_2.11" rev="1.3.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<artifact name="spray-client_2.11" type="jar" ext="jar" conf="compile,runtime" m:classifier="sources"/>
+			<artifact name="spray-client_2.11" type="jar" ext="jar" conf="compile,runtime"/>
+		</dependency>
+		<dependency org="io.spray" name="spray-json_2.11" rev="1.2.6" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<artifact name="spray-json_2.11" type="jar" ext="jar" conf="compile,runtime" m:classifier="sources"/>
+			<artifact name="spray-json_2.11" type="jar" ext="jar" conf="compile,runtime"/>
+		</dependency>
+		<dependency org="io.spray" name="spray-testkit_2.11" rev="1.3.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*);test->runtime(*),master(*)">
+			<artifact name="spray-testkit_2.11" type="jar" ext="jar" conf="compile,runtime" m:classifier="sources"/>
+			<artifact name="spray-testkit_2.11" type="jar" ext="jar" conf="test"/>
+		</dependency>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.11" rev="2.3.7" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<artifact name="akka-actor_2.11" type="jar" ext="jar" conf="compile,runtime" m:classifier="sources"/>
+			<artifact name="akka-actor_2.11" type="jar" ext="jar" conf="compile,runtime"/>
+		</dependency>
+		<dependency org="com.typesafe.akka" name="akka-testkit_2.11" rev="2.3.7" force="true" conf="compile->compile(*),master(*);runtime->runtime(*);test->runtime(*),master(*)">
+			<artifact name="akka-testkit_2.11" type="jar" ext="jar" conf="compile,runtime" m:classifier="sources"/>
+			<artifact name="akka-testkit_2.11" type="jar" ext="jar" conf="test"/>
+		</dependency>
+		<dependency org="org.specs2" name="specs2-core_2.11" rev="2.3.11" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<artifact name="specs2-core_2.11" type="jar" ext="jar" conf="compile,runtime" m:classifier="sources"/>
+			<artifact name="specs2-core_2.11" type="jar" ext="jar" conf="compile,runtime"/>
+		</dependency>
+		<dependency org="commons-lang" name="commons-lang" rev="2.4" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<artifact name="commons-lang" type="jar" ext="jar" conf="compile,runtime" m:classifier="sources"/>
+			<artifact name="commons-lang" type="jar" ext="jar" conf="compile,runtime"/>
+		</dependency>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.1.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<artifact name="logback-classic" type="jar" ext="jar" conf="compile,runtime" m:classifier="sources"/>
+			<artifact name="logback-classic" type="jar" ext="jar" conf="compile,runtime"/>
+		</dependency>
+		<dependency org="net.juniper" name="jnc-library" rev="0.1.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<artifact name="jnc-library" type="jar" ext="jar" conf="compile,runtime" m:classifier="sources"/>
+			<artifact name="jnc-library" type="jar" ext="jar" conf="compile,runtime"/>
+		</dependency>
+		<dependency org="com.typesafe.scala-logging" name="scala-logging_2.11" rev="3.1.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<artifact name="scala-logging_2.11" type="jar" ext="jar" conf="compile,runtime" m:classifier="sources"/>
+			<artifact name="scala-logging_2.11" type="jar" ext="jar" conf="compile,runtime"/>
+		</dependency>
 		<dependency org="org.hornetq" name="hornetq-jms-client" rev="2.3.19.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
 		<dependency org="com.typesafe.akka" name="akka-camel_2.11" rev="2.3.7" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
 		<dependency org="org.apache.camel" name="camel-jms" rev="2.13.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
